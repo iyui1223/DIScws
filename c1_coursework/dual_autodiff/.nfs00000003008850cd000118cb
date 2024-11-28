@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "setuptools_scm[toml]>=6.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dual_autodiff"
+version = "0.1.0"
+description = "A package for dual number-based automatic differentiation."
+authors = [
+    {name = "Yuiko Ichikawa", email = ""}
+]
+dependencies = []
+requires-python = ">=3.6"
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["tests", "examples"]
+
+[tool.setuptools_scm]
+version_scheme = "post-release"
+local_scheme = "no-local-version"
+write_to = "dual_autodiff/version.py"

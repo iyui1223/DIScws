@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: dual_autodiff
+Version: 0.1.0
+Summary: A package for dual number-based automatic differentiation.
+Author-email: Yuiko Ichikawa <dummy@cam.ac.uk>
+Requires-Python: >=3.6
