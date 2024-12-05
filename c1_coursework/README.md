@@ -45,7 +45,8 @@ pytest ${TESTDIR}/q6_test.py
 echo "*****************************************************"
 echo "   Q7: Write project documentation with Sphinx."
 echo ""
-
+# make sure added modules are included in modules.rst
+# make html
 
 
 
