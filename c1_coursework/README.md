@@ -46,6 +46,7 @@ echo "*****************************************************"
 echo "   Q7: Write project documentation with Sphinx."
 echo ""
 # make sure added modules are included in modules.rst
+# make clean
 # make html
 
 

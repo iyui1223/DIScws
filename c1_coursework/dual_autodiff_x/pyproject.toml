@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "Cython", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dual_autodiff_x"
+version = {use_scm = false}
+description = "A package for dual number-based automatic differentiation with Cython."
+authors = [
+    {name = "Yuiko Ichikawa", email = "dummy@cam.ac.uk"}
+]
+requires-python = ">=3.6"
+
+[tool.setuptools]
+package-dir = {"" = "dual_autodiff_x"}
