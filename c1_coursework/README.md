@@ -10,23 +10,41 @@ TESTDIR="${ROOT}/tests"
 source ${SOURCE}
 
 # to export packages
-export PYTHONPATH=$(pwd)
+cd ${ROOT}
+export PYTHONPATH=${ROOT}
 
-# Q1: Create project repository structure
-# cd ${ROOT}
-# tree -L 3
+echo "*****************************************************"
+echo "   Q1: Create project repository structure"
+echo ""
+cd ${ROOT}
+tree -L 3
 
-# Q2: Write project configuration as pyproject.toml
+echo "*****************************************************"
+echo "   Q2: Write project configuration as pyproject.toml"
+echo ""
+cat ${ROOT}/pyproject.toml
 
-# Q3: Implement dual numbers and operations
+echo "*****************************************************"
+echo "  Q3: Implement dual numbers and operations"
+echo ""
 
-# Q4: Make the code into a package
+echo "*****************************************************"
+echo "   Q4: Make the code into a package"
+echo ""
 
-# Q5: Compare differentials computed by dual number, forward differential, and analytical method.
-# python ${TESTDIR}/q5_test.py
+echo "*****************************************************"
+echo "   Q5: Compare differentials computed by dual number, forward, and analytical method."
+echo ""
+python ${TESTDIR}/q5_test.py
 
-# Q6: A test suite which tests the functionality of all available methods and operations of class Dual.
-# python ${TESTDIR}/q6_test.py
+echo "*****************************************************"
+echo "   Q6: A test suite which tests the functionality of all available methods and operations of class Dual."
+echo ""
+pytest ${TESTDIR}/q6_test.py
+
+echo "*****************************************************"
+echo "   Q7: Write project documentation with Sphinx."
+echo ""
 
 
 
