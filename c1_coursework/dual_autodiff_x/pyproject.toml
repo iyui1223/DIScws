@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dual_autodiff_x"
-version = {use_scm = false}
-description = "A package for dual number-based automatic differentiation with Cython."
+version = "0.1.0"
+description = "Cythonized dual number-based package."
 authors = [
     {name = "Yuiko Ichikawa", email = "dummy@cam.ac.uk"}
 ]
 requires-python = ">=3.6"
 
 [tool.setuptools]
-package-dir = {"" = "dual_autodiff_x"}
+packages = ["dual_autodiff_x"]         # List the packages explicitly

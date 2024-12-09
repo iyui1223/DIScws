@@ -1,31 +1,33 @@
 import math
-
-class Dual:
+cdef class Dual:
     """Dual number representation for automatic differentiation"""
+    # type declaration. Can be float?
+    cdef double real
+    cdef double dual
 
-    def __init__(self, real, dual):
+    def __init__(self, double real, double dual):
         self.real = real
         self.dual = dual
 
     def __repr__(self):
         return f"Dual(real={self.real}, dual={self.dual})"
 
-    def __add__(self, other):
+    def __add__(self, Dual other):
         """Add two dual numbers."""
         return Dual(self.real + other.real, self.dual + other.dual)
 
-    def __sub__(self, other):
+    def __sub__(self, Dual other):
         """Subtract two dual numbers."""
         return Dual(self.real - other.real, self.dual - other.dual)
 
-    def __mul__(self, other):
+    def __mul__(self, Dual other):
         """Multiply two dual numbers."""
         return Dual(
             self.real * other.real,
             self.dual * other.real + self.real * other.dual
         )
 
-    def __truediv__(self, other):
+    def __truediv__(self, Dual other):
         """Divide two dual numbers."""
         if other.real == 0:
             raise ZeroDivisionError("Division by zero in the real component")
@@ -73,7 +75,7 @@ class Dual:
             real_part * self.dual
         )
 
-    def __eq__(self, other):
+    def __eq__(self, Dual other):
         """Equality check for dual numbers."""
         return self.real == other.real and self.dual == other.dual
 

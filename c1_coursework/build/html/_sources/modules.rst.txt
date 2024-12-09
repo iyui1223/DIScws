@@ -11,3 +11,7 @@ Module Documentation
    :undoc-members:
    :show-inheritance:
 
+.. automodule:: dual_autodiff_x.dual
+   :members:
+   :undoc-members:
+   :show-inheritance:

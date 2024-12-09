@@ -1,1 +1,4 @@
+build
 dual_autodiff
+dual_autodiff_x
+source
