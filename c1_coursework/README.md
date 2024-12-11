@@ -10,7 +10,6 @@ A compatible Python environment is set up at CSD3: '/home/yi260/venvs/c1coursewo
 The root directory for the project is located at CSD3: '/home/yi260/gitlab/DIScws/c1_coursework'
 
 '
-#!/bin/bash
 # Define root and test directories
 ROOT="/home/yi260/gitlab/DIScws/c1_coursework"
 SOURCE="/home/yi260/venvs/c1coursework/bin/activate"
