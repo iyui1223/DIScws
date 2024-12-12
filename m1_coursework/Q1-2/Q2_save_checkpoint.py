@@ -4,7 +4,7 @@ import pandas as pd
 study_results = pd.read_csv("optuna_study_results.csv")
 
 # Get the best trial
-best_trial = study_results.iloc[22 - 1]  # 22 was the best
+best_trial = study_results.iloc[46 - 1]  # 46 was the best
 
 # Extract hyperparameters
 hidden1 = int(best_trial["params_hidden1"])

@@ -1,7 +1,7 @@
 #!/bin/bash
-# Step-by-Step Unit Testing Guide for Q1-Q8
+# Step-by-Step Unit Testing Guide for Q1-Q10
 : '
-This document provides a step-by-step guide to testing and verifying tasks from Q1-Q8. To run this as a script, simply execute it in a compatible Bash environment.
+This document provides a step-by-step guide to testing and verifying tasks from Q1-Q10. To run this as a script, simply execute it in a compatible Bash environment.
 $ cd "root/directory/of/project"
 $ bash README.md
 
@@ -77,6 +77,22 @@ echo ""
 echo "Installing the Cythonized package:"
 cd ${ROOT}/dual_autodiff_x
 pip install -e .
+
+echo "*****************************************************"
+echo "   Q9: Performance compalison."
+echo ""
+echo "The performance report is provided as tests/dual_autodiff.ipynb"
+
+echo "*****************************************************"
+echo "   Q10: Build wheel for distribution."
+echo ""
+cd ${ROOT}
+rm -rf "${ROOT}/build" "${ROOT}/dist" "${ROOT}/*.egg-info"
+# Search pre-installed docker.
+# module avail | grep "docker"
+# load the latest available docker.
+module load ceuadmin/docker/27.0.3
+cibuildwheel --output-dir dist
 
 echo "*****************************************************"
 echo "   All Steps Completed Successfully!"

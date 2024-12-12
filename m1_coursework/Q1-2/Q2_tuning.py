@@ -29,7 +29,7 @@ def objective(trial):
     hidden1 = trial.suggest_int("hidden1", 64, 256)
     hidden2 = trial.suggest_int("hidden2", 32, 128)
     lr = trial.suggest_loguniform("lr", 1e-5, 1e-1)
-    batch_size = trial.suggest_categorical("batch_size", [16, 32, 64])
+    batch_size = trial.suggest_categorical("batch_size", [16, 32, 64, 128])
     l1_lambda = trial.suggest_loguniform("l1_lambda", 1e-6, 1e-2)
 
     # Data preparation
@@ -51,7 +51,7 @@ def objective(trial):
     optimizer = optim.Adam(model.parameters(), lr=lr)
 
     # Training loop
-    epochs = 10
+    epochs = 120
     for epoch in range(epochs):
         model.train()
         for batch in train_loader:

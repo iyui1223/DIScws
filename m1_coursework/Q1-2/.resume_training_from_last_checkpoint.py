@@ -1,3 +1,11 @@
+'''
+A make-shift code to resume computatinally heavy tuning process, 
+from the checkpoint provided by last optuna tuning cycle.
+as it does not remember the previous parameter tuning process, 
+it is only useful if you decided to change the tuning framework.
+So to speak, it is for hyper-hyper parameter tuning.
+'''
+
 import optuna
 from construct_dataset import TwoimageDataset
 from torchvision import datasets, transforms

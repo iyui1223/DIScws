@@ -1,7 +1,23 @@
 c1_coursework/.pytest_cache/
 *
 
+**/build/
+
+**/*.egg-info/
+
 **/mnist_data/MNIST/raw/
 *.gz
 *.idx3-ubyte
 *.idx1-ubyte
+
+*.pyc
+*.pyo
+__pycache__/
+
+*.tmp
+*.log
+*.swp
+.DS_Store
+
+dist/
+*.whl
