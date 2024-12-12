@@ -1,0 +1,7 @@
+c1_coursework/.pytest_cache/
+*
+
+**/mnist_data/MNIST/raw/
+*.gz
+*.idx3-ubyte
+*.idx1-ubyte
