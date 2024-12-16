@@ -1,0 +1,14 @@
+SVM: Validation Accuracy = 19.12%
+Kernel SVM: Validation Accuracy = 20.42%
+Decision Tree: Validation Accuracy = 12.01%
+Random Forest: Validation Accuracy = 23.22%
+Boosting: Validation Accuracy = 8.21%
+Bagging: Validation Accuracy = 14.51%
+
+Summary of Results:
+SVM: 19.12%
+Kernel SVM: 20.42%
+Decision Tree: 12.01%
+Random Forest: 23.22%
+Boosting: 8.21%
+Bagging: 14.51%
