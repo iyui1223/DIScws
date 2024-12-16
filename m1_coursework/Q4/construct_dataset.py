@@ -2,8 +2,9 @@ import torch
 from torch.utils.data import Dataset
 import random
 
+# Uses fixed seed for both classes for the fair comparison.
 class TwoimageDataset(Dataset):
-    def __init__(self, mnist_dataset, transform=None, length=1000, start=0, end=10, seed=42):
+    def __init__(self, mnist_dataset, transform=None, length=1000, start=0, end=10):
         """
         Custom dataset for pairing two random MNIST images, concatenating them, and creating a label.
 
@@ -20,10 +21,7 @@ class TwoimageDataset(Dataset):
         self.length = length
         self.start = start
         self.end = end
-
-        # Initialize random seed
-        random.seed(seed)
-        self.rng = random.Random(seed)
+        self.rng = random.Random()
 
     def __len__(self):
         return self.length
@@ -67,7 +65,7 @@ class TwoimageDataset(Dataset):
 
 
 class TwoSeparateImageDataset(Dataset):
-    def __init__(self, mnist_dataset, transform=None, length=1000, start=0, end=10, seed=42):
+    def __init__(self, mnist_dataset, transform=None, length=1000, start=0, end=10):
         """
         Custom dataset for pairing two random MNIST images and creating a label as summation of two labels.
 
@@ -84,10 +82,7 @@ class TwoSeparateImageDataset(Dataset):
         self.length = length
         self.start = start
         self.end = end
-
-        # Initialize random seed
-        random.seed(seed)
-        self.rng = random.Random(seed)
+        self.rng = random.Random()
 
     def __len__(self):
         return self.length

@@ -6,7 +6,7 @@ class LinearClassifier56(nn.Module):
         super(LinearClassifier56, self).__init__()
         self.weaklinear = nn.Sequential(
             nn.Flatten(),
-            nn.Linear(56 * 28, 128),  # Input: Flattened 56x28 image
+            nn.Linear(56 * 28, 19),  # Input: Flattened 56x28 image
             nn.ReLU(),
         )
 

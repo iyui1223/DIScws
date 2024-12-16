@@ -117,8 +117,8 @@ def train_and_evaluate_double(model, train_loader, validate_loader, test_loader,
 # Main Loop
 def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    epochs = 5
-    dataset_sizes = [50, 100, 500, 1000]
+    epochs = 50
+    dataset_sizes = [50, 100, 500, 1000, 1500, 2000]
 
     results = []
 
