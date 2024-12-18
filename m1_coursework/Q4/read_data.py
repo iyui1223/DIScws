@@ -13,7 +13,7 @@ from construct_dataset import TwoimageDataset, TwoSeparateImageDataset
 transform = transforms.Compose([
     transforms.ToTensor()
 ])
-mnist_data = datasets.MNIST(root="../Q1-2/mnist_data", train=True, download=True, transform=transform)
+mnist_data = datasets.MNIST(root="../mnist_data", train=True, download=True, transform=transform)
 
 def prepare_dataset_dataloaders(Dataset, length):  # Flexible for any dataset
     train_set = Dataset(mnist_dataset=mnist_data, length=length, start=0, end=6)  # 60%

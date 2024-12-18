@@ -13,7 +13,7 @@ def prepare_data():
         X_train, X_val, y_train, y_val: Flattened feature vectors and labels for training/validation.
     """
     transform = transforms.Compose([transforms.ToTensor()])
-    mnist_data = datasets.MNIST(root="../Q1-2/mnist_data", train=True, download=True, transform=transform)
+    mnist_data = datasets.MNIST(root="../mnist_data", train=True, download=True, transform=transform)
 
     train_set = TwoimageDataset(mnist_dataset=mnist_data, length=1000, start=0, end=8) # 80%
     validate_set = TwoimageDataset(mnist_dataset=mnist_data, length=1000, start=8, end=10) # 20%

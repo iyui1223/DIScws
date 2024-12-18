@@ -22,7 +22,7 @@ import torch.optim as optim
 
 # Data preparation
 transform = transforms.Compose([transforms.ToTensor()])
-mnist_data = datasets.MNIST(root="mnist_data", train=True, download=True, transform=transform)
+mnist_data = datasets.MNIST(root="../mnist_data", train=True, download=True, transform=transform)
 
 train_set = TwoimageDataset(mnist_dataset=mnist_data, length=1000, start=0, end=6)
 validate_set = TwoimageDataset(mnist_dataset=mnist_data, length=333, start=6, end=8)

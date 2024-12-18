@@ -67,10 +67,10 @@ def main():
 
     # Prepare the dataset and data loader
     transform = transforms.Compose([transforms.ToTensor()])
-    mnist_dataset = datasets.MNIST(root="../Q1-2/mnist_data", train=True, download=True, transform=transform)
+    mnist_dataset = datasets.MNIST(root="../mnist_data", train=True, download=True, transform=transform)
 
     # Create TwoimageDataset with ~200 samples
-    dataset = TwoimageDataset(mnist_dataset=mnist_dataset, length=1000, start=0, end=10)
+    dataset = TwoimageDataset(mnist_dataset=mnist_dataset, length=10-00, start=0, end=10)
     dataloader = DataLoader(dataset, batch_size=1000, shuffle=False)
 
     # Extract raw images and labels for t-SNE
