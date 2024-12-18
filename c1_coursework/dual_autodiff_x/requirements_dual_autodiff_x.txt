@@ -1,0 +1,2 @@
+Cython==3.0.11
+-e git+https://github.com/iyui1223/DIScws@b5908859a501f65b476305b85f5373ab10c3c1b7#egg=dual_autodiff_x&subdirectory=c1_coursework/dual_autodiff_x
