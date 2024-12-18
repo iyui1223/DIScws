@@ -1,4 +1,4 @@
-from setuptools import setup, Extension
+from setuptools import setup, Extension, find_packages
 from Cython.Build import cythonize
 from pathlib import Path
 
@@ -8,6 +8,7 @@ version_globals = {}
 with open(version_path) as f:
     exec(f.read(), version_globals)
 
+# Define Cython extension
 ext_modules = cythonize(
     [
         Extension(
@@ -17,11 +18,16 @@ ext_modules = cythonize(
     ]
 )
 
+# Setup configuration
 setup(
     name="dual_autodiff_x",
     version=version_globals["__version__"],
     description="Cythonized dual number-based package.",
     ext_modules=ext_modules,
-    packages=["dual_autodiff_x"],
+    packages=find_packages(), 
     python_requires=">=3.6",
+    setup_requires=["Cython>=3.0.0"], 
+    install_requires=[
+        "Cython==3.0.11"
+    ],
 )

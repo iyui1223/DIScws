@@ -35,7 +35,7 @@ def plot_radar(data, parameters, colors):
     ax.set_yticks([])
     ax.set_title("Radar Chart of Parameters Over Iterations", fontsize=16)
 
-    plt.legend(loc="upper right", bbox_to_anchor=(1.3, 1.1))
+    # plt.legend(loc="upper right", bbox_to_anchor=(1.3, 1.1))
     plt.savefig("radarchart.png")
     plt.close(fig)
 
@@ -48,7 +48,7 @@ def plot_time_series(data, colors):
     ax.set_xlabel("Iteration")
     ax.set_ylabel("Model Performance (Value)")
     ax.set_title("Model Performance Over Iterations", fontsize=16)
-    ax.legend(loc="best")
+    # ax.legend(loc="best")
     plt.savefig("timeseries.png")
     plt.close(fig)
 

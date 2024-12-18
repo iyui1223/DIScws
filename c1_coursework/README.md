@@ -8,7 +8,7 @@ $ bash README.md
 ## Prerequisites
 A compatible Python environment is set up at CSD3: '/home/yi260/venvs/c1coursework/bin/activate'
 The root directory for the project is located at CSD3: '/home/yi260/gitlab/DIScws/c1_coursework'
-
+Alternatively .requirements_c1courswork.txt is provided, too.
 '
 # Define root and test directories
 ROOT="/home/yi260/gitlab/DIScws/c1_coursework"
@@ -86,13 +86,9 @@ echo "The performance report is provided as tests/dual_autodiff.ipynb"
 echo "*****************************************************"
 echo "   Q10: Build wheel for distribution."
 echo ""
-cd ${ROOT}
+cd ${ROOT}/dual_autodiff_x
 rm -rf "${ROOT}/build" "${ROOT}/dist" "${ROOT}/*.egg-info"
-# Search pre-installed docker.
-# module avail | grep "docker"
-# load the latest available docker.
-module load ceuadmin/docker/27.0.3
-cibuildwheel --output-dir dist
+python setup.py bdist_wheel
 
 echo "*****************************************************"
 echo "   All Steps Completed Successfully!"

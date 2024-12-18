@@ -1,8 +1,17 @@
 pyproject.toml
+requirements_dual_autodiff_x.txt
 setup.py
+version.py
+dist/dual_autodiff_x-0.1.0-cp38-cp38-linux_x86_64.whl
 dual_autodiff_x/__init__.py
 dual_autodiff_x/dual.c
+dual_autodiff_x/dual.cpython-38-x86_64-linux-gnu.so
+dual_autodiff_x/dual.pyx
 dual_autodiff_x.egg-info/PKG-INFO
 dual_autodiff_x.egg-info/SOURCES.txt
 dual_autodiff_x.egg-info/dependency_links.txt
 dual_autodiff_x.egg-info/top_level.txt
+dual_autodiff_x/dual_autodiff_x.egg-info/PKG-INFO
+dual_autodiff_x/dual_autodiff_x.egg-info/SOURCES.txt
+dual_autodiff_x/dual_autodiff_x.egg-info/dependency_links.txt
+dual_autodiff_x/dual_autodiff_x.egg-info/top_level.txt

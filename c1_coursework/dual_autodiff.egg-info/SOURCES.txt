@@ -7,5 +7,6 @@ dual_autodiff.egg-info/SOURCES.txt
 dual_autodiff.egg-info/dependency_links.txt
 dual_autodiff.egg-info/top_level.txt
 dual_autodiff_x/setup.py
+dual_autodiff_x/version.py
 dual_autodiff_x/dual_autodiff_x/__init__.py
 source/conf.py

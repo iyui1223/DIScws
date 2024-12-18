@@ -63,15 +63,15 @@ def apply_tSNE(features, labels1, labels2, perplexity=30, title="t-SNE Visualiza
 
 def main():
     # Parameters
-    perplexity =50
+    perplexity = 10
 
     # Prepare the dataset and data loader
     transform = transforms.Compose([transforms.ToTensor()])
     mnist_dataset = datasets.MNIST(root="../Q1-2/mnist_data", train=True, download=True, transform=transform)
 
     # Create TwoimageDataset with ~200 samples
-    dataset = TwoimageDataset(mnist_dataset=mnist_dataset, length=200, start=0, end=10)
-    dataloader = DataLoader(dataset, batch_size=200, shuffle=False)
+    dataset = TwoimageDataset(mnist_dataset=mnist_dataset, length=1000, start=0, end=10)
+    dataloader = DataLoader(dataset, batch_size=1000, shuffle=False)
 
     # Extract raw images and labels for t-SNE
     for batch in dataloader:
