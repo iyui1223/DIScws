@@ -1,0 +1,41 @@
+allexport      	off
+braceexpand    	on
+emacs          	off
+errexit        	on
+errtrace       	off
+functrace      	off
+hashall        	on
+histexpand     	off
+history        	off
+ignoreeof      	off
+interactive-comments	on
+keyword        	off
+monitor        	off
+noclobber      	off
+noexec         	off
+noglob         	off
+nolog          	off
+notify         	off
+nounset        	off
+onecmd         	off
+physical       	off
+pipefail       	off
+posix          	off
+privileged     	off
+verbose        	off
+vi             	off
+xtrace         	off
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin/conda
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda-env
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/activate
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/deactivate
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/etc/profile.d/conda.sh
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/etc/fish/conf.d/conda.fish
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/shell/condabin/Conda.psm1
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/shell/condabin/conda-hook.ps1
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/lib/python3.7/site-packages/xontrib/conda.xsh
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/etc/profile.d/conda.csh
+no change     /home/yi260/.bashrc
+No action taken.
+Running training with lr=1e-4, rank=4

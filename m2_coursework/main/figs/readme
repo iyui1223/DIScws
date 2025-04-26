@@ -1,0 +1,11 @@
+Usage of quick_viewer.html
+It works via visual studio code or similar tool support remote web server system.
+
+place quick_viewer.html to the top directory of the figures. Figures should have an regular naming rule, that forms a constant hierarchy.
+run 
+ python -m http.server 8000
+
+ open the corresponding url in your browser
+ http://localhost:8000/
+
+

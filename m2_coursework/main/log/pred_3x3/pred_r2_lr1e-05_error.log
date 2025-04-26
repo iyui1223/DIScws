@@ -1,0 +1,123 @@
++ source /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/etc/profile.d/conda.sh
+++ export CONDA_EXE=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda
+++ CONDA_EXE=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/python
+++ CONDA_PYTHON_EXE=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/python
+++ '[' -z x ']'
++ conda init bash
++ '[' 2 -lt 1 ']'
++ local cmd=init
++ shift
++ case "$cmd" in
++ OLDPATH=/home/yi260/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/intel-2021.10.0/intel-oneapi-mpi-2021.12.1-hlruk24nf4o4kwc7jre3duezso6ugzch/mpi/2021.12/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/lib/oclfpga/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin/intel64:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/binutils-2.42-y33xj6rqcsxaa6c457snjnvebbrtrtg6/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/zstd-1.5.6-l5c7mfsxf2x23rz23rrichxlujz6ohwt/bin:/usr/local/software/slurm/current-rhel8/sbin:/usr/local/software/slurm/current-rhel8/bin:/usr/local/software/global-rhel8/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/yi260/bin
++ __add_sys_prefix_to_path
++ '[' -n '' ']'
+++ dirname /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda
++ SYSP=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin
+++ dirname /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin
++ SYSP=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh
++ '[' -n '' ']'
++ PATH=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:/home/yi260/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/intel-2021.10.0/intel-oneapi-mpi-2021.12.1-hlruk24nf4o4kwc7jre3duezso6ugzch/mpi/2021.12/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/lib/oclfpga/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin/intel64:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/binutils-2.42-y33xj6rqcsxaa6c457snjnvebbrtrtg6/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/zstd-1.5.6-l5c7mfsxf2x23rz23rrichxlujz6ohwt/bin:/usr/local/software/slurm/current-rhel8/sbin:/usr/local/software/slurm/current-rhel8/bin:/usr/local/software/global-rhel8/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/yi260/bin
++ export PATH
++ /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda init bash
++ local t1=0
++ PATH=/home/yi260/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/intel-2021.10.0/intel-oneapi-mpi-2021.12.1-hlruk24nf4o4kwc7jre3duezso6ugzch/mpi/2021.12/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/lib/oclfpga/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin/intel64:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/binutils-2.42-y33xj6rqcsxaa6c457snjnvebbrtrtg6/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/zstd-1.5.6-l5c7mfsxf2x23rz23rrichxlujz6ohwt/bin:/usr/local/software/slurm/current-rhel8/sbin:/usr/local/software/slurm/current-rhel8/bin:/usr/local/software/global-rhel8/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/yi260/bin
++ return 0
++ conda activate m2coursework
++ '[' 2 -lt 1 ']'
++ local cmd=activate
++ shift
++ case "$cmd" in
++ __conda_activate activate m2coursework
++ '[' -n '' ']'
++ local cmd=activate
++ shift
++ local ask_conda
++ OLDPATH=/home/yi260/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/intel-2021.10.0/intel-oneapi-mpi-2021.12.1-hlruk24nf4o4kwc7jre3duezso6ugzch/mpi/2021.12/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/lib/oclfpga/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin/intel64:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/binutils-2.42-y33xj6rqcsxaa6c457snjnvebbrtrtg6/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/zstd-1.5.6-l5c7mfsxf2x23rz23rrichxlujz6ohwt/bin:/usr/local/software/slurm/current-rhel8/sbin:/usr/local/software/slurm/current-rhel8/bin:/usr/local/software/global-rhel8/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/yi260/bin
++ __add_sys_prefix_to_path
++ '[' -n '' ']'
+++ dirname /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda
++ SYSP=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin
+++ dirname /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin
++ SYSP=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh
++ '[' -n '' ']'
++ PATH=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:/home/yi260/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/intel-2021.10.0/intel-oneapi-mpi-2021.12.1-hlruk24nf4o4kwc7jre3duezso6ugzch/mpi/2021.12/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/lib/oclfpga/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin/intel64:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/binutils-2.42-y33xj6rqcsxaa6c457snjnvebbrtrtg6/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/zstd-1.5.6-l5c7mfsxf2x23rz23rrichxlujz6ohwt/bin:/usr/local/software/slurm/current-rhel8/sbin:/usr/local/software/slurm/current-rhel8/bin:/usr/local/software/global-rhel8/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/yi260/bin
++ export PATH
+++ PS1=
+++ /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda shell.posix activate m2coursework
++ ask_conda='PS1='\''(m2coursework) '\''
+export PATH='\''/home/yi260/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/home/yi260/.conda/envs/m2coursework/bin:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/intel-2021.10.0/intel-oneapi-mpi-2021.12.1-hlruk24nf4o4kwc7jre3duezso6ugzch/mpi/2021.12/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/lib/oclfpga/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin/intel64:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/binutils-2.42-y33xj6rqcsxaa6c457snjnvebbrtrtg6/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/zstd-1.5.6-l5c7mfsxf2x23rz23rrichxlujz6ohwt/bin:/usr/local/software/slurm/current-rhel8/sbin:/usr/local/software/slurm/current-rhel8/bin:/usr/local/software/global-rhel8/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/yi260/bin'\''
+export CONDA_PREFIX='\''/home/yi260/.conda/envs/m2coursework'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''m2coursework'\''
+export CONDA_PROMPT_MODIFIER='\''(m2coursework) '\''
+export CONDA_EXE='\''/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/python'\''
+export CONDA_PREFIX_1='\''/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh'\'''
++ PATH=/home/yi260/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/intel-2021.10.0/intel-oneapi-mpi-2021.12.1-hlruk24nf4o4kwc7jre3duezso6ugzch/mpi/2021.12/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/lib/oclfpga/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin/intel64:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/binutils-2.42-y33xj6rqcsxaa6c457snjnvebbrtrtg6/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/zstd-1.5.6-l5c7mfsxf2x23rz23rrichxlujz6ohwt/bin:/usr/local/software/slurm/current-rhel8/sbin:/usr/local/software/slurm/current-rhel8/bin:/usr/local/software/global-rhel8/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/yi260/bin
++ eval 'PS1='\''(m2coursework) '\''
+export PATH='\''/home/yi260/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/home/yi260/.conda/envs/m2coursework/bin:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/intel-2021.10.0/intel-oneapi-mpi-2021.12.1-hlruk24nf4o4kwc7jre3duezso6ugzch/mpi/2021.12/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/lib/oclfpga/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin/intel64:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/binutils-2.42-y33xj6rqcsxaa6c457snjnvebbrtrtg6/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/zstd-1.5.6-l5c7mfsxf2x23rz23rrichxlujz6ohwt/bin:/usr/local/software/slurm/current-rhel8/sbin:/usr/local/software/slurm/current-rhel8/bin:/usr/local/software/global-rhel8/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/yi260/bin'\''
+export CONDA_PREFIX='\''/home/yi260/.conda/envs/m2coursework'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''m2coursework'\''
+export CONDA_PROMPT_MODIFIER='\''(m2coursework) '\''
+export CONDA_EXE='\''/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/python'\''
+export CONDA_PREFIX_1='\''/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh'\'''
+++ PS1='(m2coursework) '
+++ export PATH=/home/yi260/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/home/yi260/.conda/envs/m2coursework/bin:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/intel-2021.10.0/intel-oneapi-mpi-2021.12.1-hlruk24nf4o4kwc7jre3duezso6ugzch/mpi/2021.12/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/lib/oclfpga/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin/intel64:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/binutils-2.42-y33xj6rqcsxaa6c457snjnvebbrtrtg6/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/zstd-1.5.6-l5c7mfsxf2x23rz23rrichxlujz6ohwt/bin:/usr/local/software/slurm/current-rhel8/sbin:/usr/local/software/slurm/current-rhel8/bin:/usr/local/software/global-rhel8/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/yi260/bin
+++ PATH=/home/yi260/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/bin/remote-cli:/home/yi260/.conda/envs/m2coursework/bin:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/intel-2021.10.0/intel-oneapi-mpi-2021.12.1-hlruk24nf4o4kwc7jre3duezso6ugzch/mpi/2021.12/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/lib/oclfpga/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin/intel64:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-12.3.0/intel-oneapi-compilers-2023.2.4-4lbvg4hvorjpsigdahoqirplf4gqmsiy/compiler/2023.2.4/linux/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/binutils-2.42-y33xj6rqcsxaa6c457snjnvebbrtrtg6/bin:/usr/local/software/spack/csd3/opt-2024-06-01/linux-rocky8-cascadelake/gcc-13.3.0/zstd-1.5.6-l5c7mfsxf2x23rz23rrichxlujz6ohwt/bin:/usr/local/software/slurm/current-rhel8/sbin:/usr/local/software/slurm/current-rhel8/bin:/usr/local/software/global-rhel8/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/yi260/bin
+++ export CONDA_PREFIX=/home/yi260/.conda/envs/m2coursework
+++ CONDA_PREFIX=/home/yi260/.conda/envs/m2coursework
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=m2coursework
+++ CONDA_DEFAULT_ENV=m2coursework
+++ export 'CONDA_PROMPT_MODIFIER=(m2coursework) '
+++ CONDA_PROMPT_MODIFIER='(m2coursework) '
+++ export CONDA_EXE=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda
+++ CONDA_EXE=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/python
+++ CONDA_PYTHON_EXE=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/python
+++ export CONDA_PREFIX_1=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh
+++ CONDA_PREFIX_1=/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ ROOT_DIR=/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main
++ exp_name=lora_r2_lr1e-05_s1000_cl512
++ WORKDIR=/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/workdir
++ SRC_DIR=/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/src
++ DATA_DIR=/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/data
++ MODELS_DIR=/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/models
++ PREDICTIONS_DIR=/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/data/predictions/lora_r2_lr1e-05_s1000_cl512
++ FIGS_DIR=/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/predictions/lora_r2_lr1e-05_s1000_cl512
++ LOG_DIR=/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/log
++ mkdir -p /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/workdir /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/log /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/data/predictions/lora_r2_lr1e-05_s1000_cl512 /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/predictions/lora_r2_lr1e-05_s1000_cl512
++ cd /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/workdir
++ echo 'Setting up working directory...'
++ ln -sf /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/models/lora_r2_lr1e-05_s1000_cl512.pt /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/workdir/
++ ln -sf /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/src/evaluate.py /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/src/flops.py /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/src/lora_skeleton.py /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/src/plot_stat.py /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/src/predict.py /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/src/preprocessor.py /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/src/qwen.py /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/workdir/
++ ln -sf /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/data/lotka_volterra_data.h5 /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/workdir/
++ ln -sf /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/data/predictions /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/workdir/
++ echo 'Running batch prediction process...'
++ python3 predict.py --exp_name lora_r2_lr1e-05_s1000_cl512
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
++ echo 'Batch prediction completed.'
++ echo 'Organizing output files...'
++ mv -v 'system*.npy' /rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/data/predictions/lora_r2_lr1e-05_s1000_cl512/
+mv: cannot stat 'system*.npy': No such file or directory

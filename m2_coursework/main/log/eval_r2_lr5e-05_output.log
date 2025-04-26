@@ -1,0 +1,110 @@
+allexport      	off
+braceexpand    	on
+emacs          	off
+errexit        	on
+errtrace       	off
+functrace      	off
+hashall        	on
+histexpand     	off
+history        	off
+ignoreeof      	off
+interactive-comments	on
+keyword        	off
+monitor        	off
+noclobber      	off
+noexec         	off
+noglob         	off
+nolog          	off
+notify         	off
+nounset        	off
+onecmd         	off
+physical       	off
+pipefail       	off
+posix          	off
+privileged     	off
+verbose        	off
+vi             	off
+xtrace         	off
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin/conda
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda-env
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/activate
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/deactivate
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/etc/profile.d/conda.sh
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/etc/fish/conf.d/conda.fish
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/shell/condabin/Conda.psm1
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/shell/condabin/conda-hook.ps1
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/lib/python3.7/site-packages/xontrib/conda.xsh
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/etc/profile.d/conda.csh
+no change     /home/yi260/.bashrc
+No action taken.
+Setting up working directory...
+Running evaluation process...
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system700.npy used [3.8240972 3.907033  3.9899688 4.0729046 4.1558404 4.238776  4.3217125
+ 4.4046483 4.4875836 4.57052  ]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system701.npy used [0.3108651  0.30927092 0.3108651  0.30927092 0.3108651  0.30927092
+ 0.3108651  0.30927092 0.3108651  0.30927092]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system703.npy used [0.57831985 0.5665773  0.5563026  0.5445601  0.5328175  0.52254283
+ 0.51226807 0.50199336 0.4902508  0.4799761 ]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system704.npy used [1.6206106 1.6171771 1.6137437 1.6103102 1.6068765 1.603443  1.6000096
+ 1.5965761 1.5931426 1.589709 ]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system705.npy used [0.92889935 0.6167692  0.43198815 0.33460352 0.28715974 0.26718342
+ 0.26968044 0.28715974 0.31712425 0.35957396]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system706.npy used [14.025362 14.392517 14.759674 15.12683  15.493986 15.861142 16.228298
+ 16.595455 16.96261  17.329767]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system707.npy used [1.1611195 1.1611195 1.1611195 1.1611195 1.1611195 1.1611195 1.1611195
+ 1.1611195 1.1611195 1.1611195]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system709.npy used [0.7088964  0.706653   0.706653   0.706653   0.70440966 0.7021663
+ 0.7021663  0.699923   0.699923   0.699923  ]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system710.npy used [1.7856115 1.7498993 1.7141871 1.6784748 1.6427625 1.6070503 1.571338
+ 1.5356258 1.4999136 1.4642013]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system711.npy used [4.1077266  3.9305625  3.197187   1.9529209  1.285467   0.8940587
+ 0.6798143  0.6097728  0.64685357 0.74985576]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system712.npy used [1.5972651 1.5615721 1.5214174 1.4812627 1.441108  1.4009532 1.3607986
+ 1.3206438 1.2804891 1.2403344]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system713.npy used [0.01103501 0.01103501 0.01103501 0.01103501 0.01103501 0.01103501
+ 0.01103501 0.01103501 0.01103501 0.01103501]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system715.npy used [0.87586343 0.8624915  0.8491194  0.83240455 0.82237554 0.8123466
+ 0.8023176  0.7922886  0.7822597  0.77223074]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system716.npy used [1.6412115 1.637778  1.6343446 1.6309111 1.6274775 1.6240441 1.6206106
+ 1.6171771 1.6137437 1.6103102]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system717.npy used [1.5064168 1.5064168 1.5064168 1.5064168 1.5064168 1.5064168 1.5064168
+ 1.5064168 1.5064168 1.5064168]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system718.npy used [1.6801485 1.6661474 1.6521461 1.6381449 1.6241436 1.6101424 1.5961411
+ 1.5821398 1.5681386 1.5541373]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system719.npy used [1.2502873 1.2832406 1.3161939 1.3491471 1.3821005 1.4150537 1.4480071
+ 1.4809604 1.5139138 1.5468669]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system720.npy used [1.5658586  1.1987435  1.0114398  0.95150256 0.9852173  1.0975994
+ 1.2886492  1.5658586  1.9217355  2.341296  ]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system721.npy used [1.1844851  1.5187433  1.9382483  2.2276394  2.209693   1.8552446
+ 1.4447129  1.0341811  0.77619666 0.6617862 ]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system723.npy used [1.8169581 1.812838  1.8087178 1.8045979 1.8004777 1.7963576 1.7922375
+ 1.7881174 1.7839974 1.7798773]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system724.npy used [3.6164873  3.5136836  3.0070083  2.2323089  1.5897858  1.185914
+ 0.98030674 0.9068755  0.9252333  1.0133507 ]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system725.npy used [1.6576092 1.6636369 1.6676553 1.6716738 1.6777015 1.6817199 1.6857383
+ 1.6897568 1.6937752 1.6977937]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system726.npy used [3.768083 3.768083 3.768083 3.768083 3.768083 3.768083 3.768083 3.768083
+ 3.768083 3.768083]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system727.npy used [2.602465  2.5891871 2.5759094 2.5626314 2.5493536 2.5360756 2.5227976
+ 2.5095198 2.496242  2.4829643]
+prediction file ./predictions/lora_r2_lr5e-05_s1000_cl512/system729.npy used [0.9510708 1.1020591 1.2452644 1.3713475 1.4709686 1.536345  1.555024
+ 1.5472411 1.4865345 1.3853568]
+Evaluation completed.
+Organizing output files...
+renamed 'Lag_correlation.png' -> '/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/evaluations/lora_r2_lr5e-05_s1000_cl512/Lag_correlation.png'
+renamed 'sample_plot700.png' -> '/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/evaluations/lora_r2_lr5e-05_s1000_cl512/sample_plot700.png'
+renamed 'sample_plot701.png' -> '/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/evaluations/lora_r2_lr5e-05_s1000_cl512/sample_plot701.png'
+renamed 'sample_plot702.png' -> '/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/evaluations/lora_r2_lr5e-05_s1000_cl512/sample_plot702.png'
+renamed 'sample_plot703.png' -> '/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/evaluations/lora_r2_lr5e-05_s1000_cl512/sample_plot703.png'
+renamed 'sample_plot704.png' -> '/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/evaluations/lora_r2_lr5e-05_s1000_cl512/sample_plot704.png'
+renamed 'sample_plot705.png' -> '/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/evaluations/lora_r2_lr5e-05_s1000_cl512/sample_plot705.png'
+renamed 'sample_plot706.png' -> '/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/evaluations/lora_r2_lr5e-05_s1000_cl512/sample_plot706.png'
+renamed 'sample_plot707.png' -> '/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/evaluations/lora_r2_lr5e-05_s1000_cl512/sample_plot707.png'
+renamed 'sample_plot708.png' -> '/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/evaluations/lora_r2_lr5e-05_s1000_cl512/sample_plot708.png'
+renamed 'sample_plot709.png' -> '/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/evaluations/lora_r2_lr5e-05_s1000_cl512/sample_plot709.png'
+renamed 'sample_plot710.png' -> '/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/evaluations/lora_r2_lr5e-05_s1000_cl512/sample_plot710.png'
+renamed 'sample_plot711.png' -> '/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/evaluations/lora_r2_lr5e-05_s1000_cl512/sample_plot711.png'
+renamed 'sample_plot712.png' -> '/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/evaluations/lora_r2_lr5e-05_s1000_cl512/sample_plot712.png'
+renamed 'three_metrics_dual_axes.png' -> '/rds/user/yi260/hpc-work/cwk/cwssubmit/m2/yi260/main/figs/evaluations/lora_r2_lr5e-05_s1000_cl512/three_metrics_dual_axes.png'
+All files have been moved successfully.

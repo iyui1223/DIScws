@@ -1,0 +1,745 @@
+allexport      	off
+braceexpand    	on
+emacs          	off
+errexit        	on
+errtrace       	off
+functrace      	off
+hashall        	on
+histexpand     	off
+history        	off
+ignoreeof      	off
+interactive-comments	on
+keyword        	off
+monitor        	off
+noclobber      	off
+noexec         	off
+noglob         	off
+nolog          	off
+notify         	off
+nounset        	off
+onecmd         	off
+physical       	off
+pipefail       	off
+posix          	off
+privileged     	off
+verbose        	off
+vi             	off
+xtrace         	off
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin/conda
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda-env
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/activate
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/deactivate
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/etc/profile.d/conda.sh
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/etc/fish/conf.d/conda.fish
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/shell/condabin/Conda.psm1
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/shell/condabin/conda-hook.ps1
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/lib/python3.7/site-packages/xontrib/conda.xsh
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/etc/profile.d/conda.csh
+no change     /home/yi260/.bashrc
+No action taken.
+Running training with lr=1e-04, rank=8
+LoRA weights found in lora_r8_lr1e-04_s25_cl512.pt -- loading resume training
+
+[Step 1] Validation Loss: 1.2323
+[Step 1] Saved new best model (val_loss=1.2323)
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+final best loss = 1.2323
+
+[Step 20] Validation Loss: 0.9438
+[Step 20] Saved new best model (val_loss=0.9438)
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+final best loss = 0.9438
+
+[Step 40] Validation Loss: 0.8497
+[Step 40] Saved new best model (val_loss=0.8497)
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+final best loss = 0.8497
+
+[Step 60] Validation Loss: 0.7887
+[Step 60] Saved new best model (val_loss=0.7887)
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+final best loss = 0.7887
+
+[Step 80] Validation Loss: 0.7488
+[Step 80] Saved new best model (val_loss=0.7488)
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+final best loss = 0.7488
+
+[Step 100] Validation Loss: 0.7211
+[Step 100] Saved new best model (val_loss=0.7211)
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+final best loss = 0.7211
+
+[Step 120] Validation Loss: 0.6994
+[Step 120] Saved new best model (val_loss=0.6994)
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+final best loss = 0.6994
+
+[Step 140] Validation Loss: 0.6814
+[Step 140] Saved new best model (val_loss=0.6814)
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+final best loss = 0.6814
+
+[Step 160] Validation Loss: 0.6680
+[Step 160] Saved new best model (val_loss=0.6680)
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+final best loss = 0.6680
+
+[Step 180] Validation Loss: 0.6569
+[Step 180] Saved new best model (val_loss=0.6569)
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+final best loss = 0.6569
+
+[Step 200] Validation Loss: 0.6466
+[Step 200] Saved new best model (val_loss=0.6466)
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+final best loss = 0.6466
+
+[Step 220] Validation Loss: 0.6357
+[Step 220] Saved new best model (val_loss=0.6357)
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+final best loss = 0.6357
+
+[Step 240] Validation Loss: 0.6284
+[Step 240] Saved new best model (val_loss=0.6284)
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+final best loss = 0.6284
+
+[Step 260] Validation Loss: 0.6177
+[Step 260] Saved new best model (val_loss=0.6177)
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+final best loss = 0.6177
+
+[Step 280] Validation Loss: 0.6089
+[Step 280] Saved new best model (val_loss=0.6089)
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+final best loss = 0.6089
+
+[Step 300] Validation Loss: 0.6018
+[Step 300] Saved new best model (val_loss=0.6018)
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+final best loss = 0.6018
+
+[Step 320] Validation Loss: 0.5948
+[Step 320] Saved new best model (val_loss=0.5948)
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+final best loss = 0.5948
+
+[Step 340] Validation Loss: 0.5860
+[Step 340] Saved new best model (val_loss=0.5860)
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+final best loss = 0.5860
+
+[Step 360] Validation Loss: 0.5788
+[Step 360] Saved new best model (val_loss=0.5788)
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+final best loss = 0.5788
+
+[Step 380] Validation Loss: 0.5751
+[Step 380] Saved new best model (val_loss=0.5751)
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+final best loss = 0.5751
+
+[Step 400] Validation Loss: 0.5685
+[Step 400] Saved new best model (val_loss=0.5685)
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+final best loss = 0.5685
+
+[Step 420] Validation Loss: 0.5677
+[Step 420] Saved new best model (val_loss=0.5677)
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+final best loss = 0.5677
+
+[Step 440] Validation Loss: 0.5613
+[Step 440] Saved new best model (val_loss=0.5613)
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+final best loss = 0.5613
+
+[Step 460] Validation Loss: 0.5541
+[Step 460] Saved new best model (val_loss=0.5541)
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+final best loss = 0.5541
+
+[Step 480] Validation Loss: 0.5508
+[Step 480] Saved new best model (val_loss=0.5508)
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+final best loss = 0.5508
+
+[Step 500] Validation Loss: 0.5466
+[Step 500] Saved new best model (val_loss=0.5466)
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+final best loss = 0.5466
+
+[Step 520] Validation Loss: 0.5431
+[Step 520] Saved new best model (val_loss=0.5431)
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+final best loss = 0.5431
+
+[Step 540] Validation Loss: 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+final best loss = 0.5468
+
+[Step 560] Validation Loss: 0.5376
+[Step 560] Saved new best model (val_loss=0.5376)
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+final best loss = 0.5376
+
+[Step 580] Validation Loss: 0.5342
+[Step 580] Saved new best model (val_loss=0.5342)
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+final best loss = 0.5342
+
+[Step 600] Validation Loss: 0.5349
+final best loss = 0.5349
+final best loss = 0.5349
+final best loss = 0.5349
+final best loss = 0.5349
+final best loss = 0.5349
+final best loss = 0.5349
+final best loss = 0.5349
+final best loss = 0.5349
+final best loss = 0.5349
+final best loss = 0.5349
+final best loss = 0.5349
+final best loss = 0.5349
+final best loss = 0.5349

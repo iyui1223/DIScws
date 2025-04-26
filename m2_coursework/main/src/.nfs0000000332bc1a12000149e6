@@ -1,0 +1,39 @@
+import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+def load_qwen():
+    model_name = "Qwen/Qwen2.5-0.5B-Instruct"
+    tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+    model = AutoModelForCausalLM.from_pretrained(model_name, trust_remote_code=True)
+
+    # Freeze all parameters except LM head bias
+    for param in model.parameters():
+        param.requires_grad = False
+
+    # Add trainable bias to logits
+    assert model.lm_head.bias is None
+    model.lm_head.bias = torch.nn.Parameter(
+        torch.zeros(model.config.vocab_size, device=model.device)
+    )
+    model.lm_head.bias.requires_grad = True
+
+    return model, tokenizer
+
+if __name__ == "__main__":
+    from preprocessor import preprocess
+    infile="../data/lotka_volterra_data.h5"
+    time, trajectories = read(infile)
+
+    tokenized = preprocess(time, trajectories[:2,:, :])
+
+    model, tokenizer = load_qwen()
+
+    # https://huggingface.co/docs/transformers/model_doc/qwen2
+
+    model_inputs = tokenizer([text], return_tensors="pt").to(device)
+    generated_ids = model.generate(model_inputs.input_ids, max_new_tokens=512, do_sample=True)
+    generated_ids = [output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)]
+    response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
+
+    print(tokenized)
+    print(len(tokenized))

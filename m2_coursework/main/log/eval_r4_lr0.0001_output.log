@@ -1,0 +1,97 @@
+allexport      	off
+braceexpand    	on
+emacs          	off
+errexit        	on
+errtrace       	off
+functrace      	off
+hashall        	on
+histexpand     	off
+history        	off
+ignoreeof      	off
+interactive-comments	on
+keyword        	off
+monitor        	off
+noclobber      	off
+noexec         	off
+noglob         	off
+nolog          	off
+notify         	off
+nounset        	off
+onecmd         	off
+physical       	off
+pipefail       	off
+posix          	off
+privileged     	off
+verbose        	off
+vi             	off
+xtrace         	off
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin/conda
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/conda-env
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/activate
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin/deactivate
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/etc/profile.d/conda.sh
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/etc/fish/conf.d/conda.fish
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/shell/condabin/Conda.psm1
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/shell/condabin/conda-hook.ps1
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/lib/python3.7/site-packages/xontrib/conda.xsh
+no change     /usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/etc/profile.d/conda.csh
+no change     /home/yi260/.bashrc
+No action taken.
+Setting up working directory...
+Running evaluation process...
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system701.npy used [0.2916346 0.2916346 0.2916346 0.2916346 0.2916346 0.2916346 0.2916346
+ 0.2916346 0.2916346 0.2916346]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system702.npy used [0.49104318 0.49104318 0.49104318 0.49104318 0.48211512 0.48211512
+ 0.48211512 0.48211512 0.47318706 0.47318706]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system703.npy used [1.5903533 1.5532726 1.5161918 1.4873513 1.4626307 1.4379102 1.4131896
+ 1.3884691 1.3637487 1.3390281]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system704.npy used [2.1415844 2.1192765 2.0969684 2.07466   2.052352  2.0300436 2.0077355
+ 1.9854274 1.9631191 1.940811 ]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system705.npy used [1.5748543  1.5575136  1.4172112  1.1697116  0.86546046 0.5864322
+ 0.3893784  0.2727225  0.2112417  0.18128954]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system706.npy used [1.4838719  1.0339515  0.7570775  0.6013359  0.5148127  0.4758773
+ 0.46722502 0.48452964 0.52346504 0.5883574 ]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system707.npy used [2.6511507 2.6511507 2.6511507 2.6511507 2.6511507 2.6511507 2.6511507
+ 2.6511507 2.6511507 2.6511507]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system708.npy used [0.19420105 0.19150381 0.18880658 0.18610935 0.18341209 0.18071486
+ 0.17801763 0.17532039 0.17262316 0.16992593]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system709.npy used [3.0808713 2.8557427 2.4394085 1.9613956 1.5419776 1.2520858 1.0917201
+ 1.0392929 1.0701325 1.171903 ]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system710.npy used [0.9017407  0.896341   0.89094144 0.88554174 0.8801421  0.8747425
+ 0.8693428  0.86394316 0.8585435  0.8531439 ]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system711.npy used [1.4853059  1.4204651  1.1520545  0.7524544  0.4629329  0.3121404
+ 0.24428381 0.22618872 0.23976003 0.28047398]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system712.npy used [1.4299794 1.4905583 1.5240362 1.5224419 1.4857757 1.4204143 1.3343285
+ 1.2418662 1.1541862 1.0792598]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system713.npy used [0.0077706 0.0077706 0.0077706 0.0077706 0.0077706 0.0077706 0.0077706
+ 0.0077706 0.0077706 0.0077706]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system715.npy used [0.3399162 0.3399162 0.3399162 0.3399162 0.3399162 0.3399162 0.3399162
+ 0.3399162 0.3399162 0.3399162]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system716.npy used [1.4932307 1.4907336 1.4882367 1.4857395 1.4832425 1.4807456 1.4782485
+ 1.4757514 1.4732543 1.4707574]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system717.npy used [1.1491985 1.303404  1.5016683 1.7403197 1.997329  2.2433236 2.4305732
+ 2.5150192 2.757342  2.9886503]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system718.npy used [0.58870244 0.5706194  0.5525364  0.5344534  0.51637036 0.49828738
+ 0.48020434 0.46212137 0.44403833 0.42595536]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system719.npy used [0.68808097 0.7027494  0.7174177  0.7320861  0.7467546  0.76142293
+ 0.77609134 0.79075974 0.8054281  0.82009655]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system720.npy used [1.0188283  1.1180171  1.0947505  0.93066037 0.7041181  0.51186323
+ 0.391857   0.33062935 0.3110365  0.32205746]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system721.npy used [1.7639027 2.209406  2.7382145 3.259779  3.5893788 3.0062406 2.2818453
+ 1.6733533 1.3002896 1.1191908]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system723.npy used [2.0623434 2.0623434 2.0623434 2.0623434 2.0623434 2.0623434 2.0623434
+ 2.0623434 2.0623434 2.0623434]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system724.npy used [2.1267593  2.0663033  1.7683411  1.3084428  0.9219556  0.7038818
+ 0.5678556  0.53330916 0.54842323 0.5959245 ]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system725.npy used [2.654334  2.657677  2.66102   2.6643631 2.667706  2.6710489 2.674392
+ 2.677735  2.681078  2.684421 ]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system727.npy used [2.958928  2.949594  2.94026   2.9309258 2.9215915 2.9122574 2.902923
+ 2.8935893 2.884255  2.8749208]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system728.npy used [1.544128  1.5487977 1.5519109 1.555024  1.555024  1.555024  1.555024
+ 1.555024  1.555024  1.555024 ]
+prediction file ./predictions/lora_r4_lr0.0001_s1000_cl512/system729.npy used [4.41039   4.606407  4.6624117 4.6390767 4.457061  4.1537004 3.7476647
+ 3.2762897 2.7955804 2.352208 ]
+[701, 702, 703, 704, 705, 706, 707, 708, 709, 710]
+Evaluation completed.
+Organizing output files...

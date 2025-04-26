@@ -1,0 +1,591 @@
++++ dirname /var/spool/slurm/slurmd/job7835224/slurm_script
+++ cd /var/spool/slurm/slurmd/job7835224
+++ pwd
++ Current_dir=/var/spool/slurm/slurmd/job7835224
+++ realpath /var/spool/slurm/slurmd/job7835224/..
++ Root=/var/spool/slurm/slurmd
++ cd /var/spool/slurm/slurmd
++ exp_name=parallel-mpiomp
++ opt_levels=("-O0" "-O3")
++ numnodes=1
++ max_numtasks=1
++ . /etc/profile.d/modules.sh
+++ '[' -n /bin/bash ']'
+++ '[' bash = sh ']'
+++ shell=bash
+++ '[' -f /usr/share/Modules/init/bash ']'
+++ . /usr/share/Modules/init/bash
++++ unset _mlshdbg
++++ '[' 0 = 1 ']'
++++ export 'MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD'
++++ MODULES_RUN_QUARANTINE='LD_LIBRARY_PATH LD_PRELOAD'
++++ unset _mlre _mlIFS
++++ '[' -n x ']'
++++ _mlIFS=' 	
+'
++++ IFS=' '
++++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++++ '[' LD_LIBRARY_PATH = LD_LIBRARY_PATH -a LD_LIBRARY_PATH = LD_LIBRARY_PATH ']'
+++++ eval 'echo ${LD_LIBRARY_PATH+x}'
++++++ echo x
++++ '[' -n x ']'
+++++ eval 'echo ${LD_LIBRARY_PATH}'
++++++ echo /usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib
++++ _mlre='LD_LIBRARY_PATH_modquar='\''/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib'\'' '
++++ _mlrv=MODULES_RUNENV_LD_LIBRARY_PATH
+++++ eval 'echo ${MODULES_RUNENV_LD_LIBRARY_PATH:-}'
++++++ echo
++++ _mlre='LD_LIBRARY_PATH_modquar='\''/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib'\'' LD_LIBRARY_PATH='\'''\'' '
++++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++++ '[' LD_PRELOAD = LD_PRELOAD -a LD_PRELOAD = LD_PRELOAD ']'
+++++ eval 'echo ${LD_PRELOAD+x}'
++++++ echo
++++ '[' -n '' ']'
++++ _mlrv=MODULES_RUNENV_LD_PRELOAD
+++++ eval 'echo ${MODULES_RUNENV_LD_PRELOAD:-}'
++++++ echo
++++ _mlre='LD_LIBRARY_PATH_modquar='\''/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib'\'' LD_LIBRARY_PATH='\'''\'' LD_PRELOAD='\'''\'' '
++++ '[' -n 'LD_LIBRARY_PATH_modquar='\''/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib'\'' LD_LIBRARY_PATH='\'''\'' LD_PRELOAD='\'''\'' ' ']'
++++ _mlre='eval LD_LIBRARY_PATH_modquar='\''/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib'\'' LD_LIBRARY_PATH='\'''\'' LD_PRELOAD='\'''\'' '
+++++ eval 'LD_LIBRARY_PATH_modquar='\''/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib'\''' 'LD_LIBRARY_PATH='\'''\''' 'LD_PRELOAD='\'''\''' /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash autoinit
++++++ LD_LIBRARY_PATH_modquar=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib
++++++ LD_LIBRARY_PATH=
++++++ LD_PRELOAD=
++++++ /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash autoinit
++++ _mlcode='module() {
+   unset _mlshdbg;
+   if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '\''1'\'' ]; then
+      case "$-" in
+         *v*x*) set +vx; _mlshdbg='\''vx'\'' ;;
+         *v*) set +v; _mlshdbg='\''v'\'' ;;
+         *x*) set +x; _mlshdbg='\''x'\'' ;;
+         *) _mlshdbg='\'''\'' ;;
+      esac;
+   fi;
+   unset _mlre _mlIFS;
+   if [ -n "${IFS+x}" ]; then
+      _mlIFS=$IFS;
+   fi;
+   IFS='\'' '\'';
+   for _mlv in ${MODULES_RUN_QUARANTINE:-}; do
+      if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+         if [ -n "`eval '\''echo ${'\''$_mlv'\''+x}'\''`" ]; then
+            _mlre="${_mlre:-}${_mlv}_modquar='\''`eval '\''echo ${'\''$_mlv'\''}'\''`'\'' ";
+         fi;
+         _mlrv="MODULES_RUNENV_${_mlv}";
+         _mlre="${_mlre:-}${_mlv}='\''`eval '\''echo ${'\''$_mlrv'\'':-}'\''`'\'' ";
+      fi;
+   done;
+   if [ -n "${_mlre:-}" ]; then
+      eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '\''"$@"'\''`;
+   else
+      eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;
+   fi;
+   _mlstatus=$?;
+   if [ -n "${_mlIFS+x}" ]; then
+      IFS=$_mlIFS;
+   else
+      unset IFS;
+   fi;
+   unset _mlre _mlv _mlrv _mlIFS;
+   if [ -n "${_mlshdbg:-}" ]; then
+      set -$_mlshdbg;
+   fi;
+   unset _mlshdbg;
+   return $_mlstatus;
+};
+ml() { module ml "$@"; };
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl; export MODULES_CMD;
+MODULESHOME=/usr/share/Modules; export MODULESHOME;
+test 0;'
++++ _mlret=0
++++ '[' -n x ']'
++++ IFS=' 	
+'
++++ unset _mlIFS
++++ unset _mlre _mlv _mlrv
++++ '[' 0 -eq 0 ']'
++++ eval 'module() {
+   unset _mlshdbg;
+   if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '\''1'\'' ]; then
+      case "$-" in
+         *v*x*) set +vx; _mlshdbg='\''vx'\'' ;;
+         *v*) set +v; _mlshdbg='\''v'\'' ;;
+         *x*) set +x; _mlshdbg='\''x'\'' ;;
+         *) _mlshdbg='\'''\'' ;;
+      esac;
+   fi;
+   unset _mlre _mlIFS;
+   if [ -n "${IFS+x}" ]; then
+      _mlIFS=$IFS;
+   fi;
+   IFS='\'' '\'';
+   for _mlv in ${MODULES_RUN_QUARANTINE:-}; do
+      if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+         if [ -n "`eval '\''echo ${'\''$_mlv'\''+x}'\''`" ]; then
+            _mlre="${_mlre:-}${_mlv}_modquar='\''`eval '\''echo ${'\''$_mlv'\''}'\''`'\'' ";
+         fi;
+         _mlrv="MODULES_RUNENV_${_mlv}";
+         _mlre="${_mlre:-}${_mlv}='\''`eval '\''echo ${'\''$_mlrv'\'':-}'\''`'\'' ";
+      fi;
+   done;
+   if [ -n "${_mlre:-}" ]; then
+      eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '\''"$@"'\''`;
+   else
+      eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;
+   fi;
+   _mlstatus=$?;
+   if [ -n "${_mlIFS+x}" ]; then
+      IFS=$_mlIFS;
+   else
+      unset IFS;
+   fi;
+   unset _mlre _mlv _mlrv _mlIFS;
+   if [ -n "${_mlshdbg:-}" ]; then
+      set -$_mlshdbg;
+   fi;
+   unset _mlshdbg;
+   return $_mlstatus;
+};
+ml() { module ml "$@"; };
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl; export MODULES_CMD;
+MODULESHOME=/usr/share/Modules; export MODULESHOME;
+test 0;'
+++++ MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+++++ export MODULES_CMD
+++++ MODULESHOME=/usr/share/Modules
+++++ export MODULESHOME
+++++ test 0
++++ '[' 0 = 1 ']'
++++ '[' -t 2 ']'
++++ export -f module
+++++ type -t ml
++++ '[' function = function ']'
++++ export -f ml
++++ export -f switchml
++++ '[' 4 -ge 3 ']'
++++ [[ ehxB =~ i ]]
++++ [[ ! :/home/yi260/.vscode-server/cli/servers/Stable-4437686ffebaf200fa4a6e6e67f735f3edf24ada/server/bin/remote-cli:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/libfabric/bin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/bin:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/bin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/bin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/bin/intel64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/bin:/usr/local/Cluster-Apps/vgl/2.5.1/64/bin:/usr/local/software/cuda/11.4/bin:/usr/local/software/cuda/11.4/samples/bin/x86_64/linux/release:/usr/local/software/cuda/11.4/nvvm/bin:/usr/local/software/cuda/11.4/libnvvp:/usr/local/software/global-rhel8/bin:/opt/singularity/bin:/usr/local/Cluster-Apps/singularity/images:/usr/local/software/slurm/current-rhel8/sbin:/usr/local/software/slurm/current-rhel8/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/yi260/bin:/home/yi260/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand: =~ :/usr/share/Modules/bin: ]]
++++ '[' '!' -n x ']'
+++++ manpath
++++ [[ ! :/usr/share/man:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/share/man:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/man:/usr/local/Cluster-Apps/vgl/2.5.1/64/share/man:/usr/local/software/slurm/current-rhel8/share/man:/usr/local/man:/usr/local/share/man:/usr/share/man: =~ :/usr/share/man: ]]
++++ unset _mlcode _mlret
++++ '[' -n '' ']'
++ module purge
++ unset _mlshdbg
++ '[' 0 = 1 ']'
++ unset _mlre _mlIFS
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++ '[' LD_LIBRARY_PATH = LD_LIBRARY_PATH -a LD_LIBRARY_PATH = LD_LIBRARY_PATH ']'
+++ eval 'echo ${LD_LIBRARY_PATH+x}'
++++ echo x
++ '[' -n x ']'
+++ eval 'echo ${LD_LIBRARY_PATH}'
++++ echo /usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib
++ _mlre='LD_LIBRARY_PATH_modquar='\''/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib'\'' '
++ _mlrv=MODULES_RUNENV_LD_LIBRARY_PATH
+++ eval 'echo ${MODULES_RUNENV_LD_LIBRARY_PATH:-}'
++++ echo
++ _mlre='LD_LIBRARY_PATH_modquar='\''/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib'\'' LD_LIBRARY_PATH='\'''\'' '
++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++ '[' LD_PRELOAD = LD_PRELOAD -a LD_PRELOAD = LD_PRELOAD ']'
+++ eval 'echo ${LD_PRELOAD+x}'
++++ echo
++ '[' -n '' ']'
++ _mlrv=MODULES_RUNENV_LD_PRELOAD
+++ eval 'echo ${MODULES_RUNENV_LD_PRELOAD:-}'
++++ echo
++ _mlre='LD_LIBRARY_PATH_modquar='\''/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib'\'' LD_LIBRARY_PATH='\'''\'' LD_PRELOAD='\'''\'' '
++ '[' -n 'LD_LIBRARY_PATH_modquar='\''/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib'\'' LD_LIBRARY_PATH='\'''\'' LD_PRELOAD='\'''\'' ' ']'
+++ eval 'LD_LIBRARY_PATH_modquar='\''/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib'\''' 'LD_LIBRARY_PATH='\'''\''' 'LD_PRELOAD='\'''\''' /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'
++++ LD_LIBRARY_PATH_modquar=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib
++++ LD_LIBRARY_PATH=
++++ LD_PRELOAD=
++++ /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash purge
++ eval unset 'SOCKS_PROXY_PORT;
+unset' 'CPATH;
+unset' 'SLURM_MPI_TYPE;
+unset' 'CMPLR_ROOT;
+unset' 'CMAKE_PREFIX_PATH;
+unset' 'I_MPI_F90;
+unset' 'I_MPI_OFI_PROVIDER;
+unset' 'FPGA_VARS_ARGS;
+unset' 'COSMOHOST;
+unset' 'CMAKE_PREFIX_PATH_modshare;
+unset' 'CLASSPATH_modshare;
+unset' 'FPGA_VARS_DIR;
+unset' 'I_MPI_CXX;
+MANPATH=/usr/share/man:;' export 'MANPATH;
+unset' 'SOCKS_PROXY_SERVER;
+MANPATH_modshare=:1:/usr/share/man:1;' export 'MANPATH_modshare;
+unset' 'PKG_CONFIG_PATH;
+unset' 'MODULES_LMNOTUASKED_modshare;
+unset' 'MODULES_LMPREREQ_modshare;
+unset' 'LD_LIBRARY_PATH_modshare;
+MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles:/usr/local/software/spack/current/share/spack/tcl/linux-rhel7-x86_64:/usr/local/software/modulefiles:/usr/local/Cluster-Config/modulefiles;' export 'MODULEPATH;
+unset' 'OMP_NUM_THREADS;
+PATH=/home/yi260/.vscode-server/cli/servers/Stable-4437686ffebaf200fa4a6e6e67f735f3edf24ada/server/bin/remote-cli:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/libfabric/bin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/yi260/bin:/home/yi260/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand;' export 'PATH;
+unset' 'INTELFPGAOCLSDKROOT;
+unset' 'FI_PROVIDER_PATH_modshare;
+unset' 'MODULES_LMPREREQ;
+unset' 'LD_LIBRARY_PATH;
+unset' 'LOADEDMODULES;
+unset' 'FPATH;
+unset' 'I_MPI_CC;
+unset' 'PKG_CONFIG_PATH_modshare;
+unset' 'MODULES_LMNOTUASKED;
+unset' 'VGL_BINDIR;
+unset' 'OCL_ICD_FILENAMES_modshare;
+unset' 'NLSPATH;
+unset' 'VGL_COMPRESS;
+unset' 'LOADEDMODULES_modshare;
+MODULEPATH_modshare=/etc/scl/modulefiles:1:/usr/local/software/modulefiles:1:/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2:/usr/local/software/spack/current/share/spack/tcl/linux-rhel7-x86_64:1:/usr/local/Cluster-Config/modulefiles:1;' export 'MODULEPATH_modshare;
+unset' 'I_MPI_PMI_LIBRARY;
+unset' 'OCL_ICD_FILENAMES;
+unset' 'UCX_NET_DEVICES;
+unset' 'I_MPI_ROOT;
+unset' 'LIBRARY_PATH;
+unset' 'DIAGUTIL_PATH_modshare;
+unset' '_LMFILES_;
+unset' 'ACL_BOARD_VENDOR_PATH_modshare;
+unset' 'LIBRARY_PATH_modshare;
+unset' 'NLSPATH_modshare;
+unset' 'FPATH_modshare;
+unset' 'CUDA_INSTALL_PATH;
+unset' 'SLURM_CONF;
+unset' 'ACL_BOARD_VENDOR_PATH;
+unset' 'PYTHONDONTWRITEBYTECODE;
+unset' 'CUDA_PATH;
+unset' 'I_MPI_F77;
+unset' 'CPATH_modshare;
+unset' 'CLASSPATH;
+unset' '_LMFILES__modshare;
+unset' 'SOCKS_PROXY_NETWORK;
+unset' 'FI_PROVIDER_PATH;
+unset' 'I_MPI_FC;
+PATH_modshare=/usr/bin:1:/home/yi260/bin:1:/usr/share/Modules/bin:1:/usr/local/bin:1:/home/yi260/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:1:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/bin:1:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:1:/usr/sbin:1:/home/yi260/.vscode-server/cli/servers/Stable-4437686ffebaf200fa4a6e6e67f735f3edf24ada/server/bin/remote-cli:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/libfabric/bin:1:/usr/local/sbin:1;' export 'PATH_modshare;
+unset' 'DIAGUTIL_PATH;
+test' '0;'
+++ unset SOCKS_PROXY_PORT
+++ unset CPATH
+++ unset SLURM_MPI_TYPE
+++ unset CMPLR_ROOT
+++ unset CMAKE_PREFIX_PATH
+++ unset I_MPI_F90
+++ unset I_MPI_OFI_PROVIDER
+++ unset FPGA_VARS_ARGS
+++ unset COSMOHOST
+++ unset CMAKE_PREFIX_PATH_modshare
+++ unset CLASSPATH_modshare
+++ unset FPGA_VARS_DIR
+++ unset I_MPI_CXX
+++ MANPATH=/usr/share/man:
+++ export MANPATH
+++ unset SOCKS_PROXY_SERVER
+++ MANPATH_modshare=:1:/usr/share/man:1
+++ export MANPATH_modshare
+++ unset PKG_CONFIG_PATH
+++ unset MODULES_LMNOTUASKED_modshare
+++ unset MODULES_LMPREREQ_modshare
+++ unset LD_LIBRARY_PATH_modshare
+++ MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles:/usr/local/software/spack/current/share/spack/tcl/linux-rhel7-x86_64:/usr/local/software/modulefiles:/usr/local/Cluster-Config/modulefiles
+++ export MODULEPATH
+++ unset OMP_NUM_THREADS
+++ PATH=/home/yi260/.vscode-server/cli/servers/Stable-4437686ffebaf200fa4a6e6e67f735f3edf24ada/server/bin/remote-cli:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/libfabric/bin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/yi260/bin:/home/yi260/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand
+++ export PATH
+++ unset INTELFPGAOCLSDKROOT
+++ unset FI_PROVIDER_PATH_modshare
+++ unset MODULES_LMPREREQ
+++ unset LD_LIBRARY_PATH
+++ unset LOADEDMODULES
+++ unset FPATH
+++ unset I_MPI_CC
+++ unset PKG_CONFIG_PATH_modshare
+++ unset MODULES_LMNOTUASKED
+++ unset VGL_BINDIR
+++ unset OCL_ICD_FILENAMES_modshare
+++ unset NLSPATH
+++ unset VGL_COMPRESS
+++ unset LOADEDMODULES_modshare
+++ MODULEPATH_modshare=/etc/scl/modulefiles:1:/usr/local/software/modulefiles:1:/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2:/usr/local/software/spack/current/share/spack/tcl/linux-rhel7-x86_64:1:/usr/local/Cluster-Config/modulefiles:1
+++ export MODULEPATH_modshare
+++ unset I_MPI_PMI_LIBRARY
+++ unset OCL_ICD_FILENAMES
+++ unset UCX_NET_DEVICES
+++ unset I_MPI_ROOT
+++ unset LIBRARY_PATH
+++ unset DIAGUTIL_PATH_modshare
+++ unset _LMFILES_
+++ unset ACL_BOARD_VENDOR_PATH_modshare
+++ unset LIBRARY_PATH_modshare
+++ unset NLSPATH_modshare
+++ unset FPATH_modshare
+++ unset CUDA_INSTALL_PATH
+++ unset SLURM_CONF
+++ unset ACL_BOARD_VENDOR_PATH
+++ unset PYTHONDONTWRITEBYTECODE
+++ unset CUDA_PATH
+++ unset I_MPI_F77
+++ unset CPATH_modshare
+++ unset CLASSPATH
+++ unset _LMFILES__modshare
+++ unset SOCKS_PROXY_NETWORK
+++ unset FI_PROVIDER_PATH
+++ unset I_MPI_FC
+++ PATH_modshare=/usr/bin:1:/home/yi260/bin:1:/usr/share/Modules/bin:1:/usr/local/bin:1:/home/yi260/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:1:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/bin:1:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:1:/usr/sbin:1:/home/yi260/.vscode-server/cli/servers/Stable-4437686ffebaf200fa4a6e6e67f735f3edf24ada/server/bin/remote-cli:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/libfabric/bin:1:/usr/local/sbin:1
+++ export PATH_modshare
+++ unset DIAGUTIL_PATH
+++ test 0
++ _mlstatus=0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlre _mlv _mlrv _mlIFS
++ '[' -n '' ']'
++ unset _mlshdbg
++ return 0
++ module load rhel8/default-icl
++ unset _mlshdbg
++ '[' 0 = 1 ']'
++ unset _mlre _mlIFS
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++ '[' LD_LIBRARY_PATH = LD_LIBRARY_PATH -a LD_LIBRARY_PATH = LD_LIBRARY_PATH ']'
+++ eval 'echo ${LD_LIBRARY_PATH+x}'
++++ echo
++ '[' -n '' ']'
++ _mlrv=MODULES_RUNENV_LD_LIBRARY_PATH
+++ eval 'echo ${MODULES_RUNENV_LD_LIBRARY_PATH:-}'
++++ echo
++ _mlre='LD_LIBRARY_PATH='\'''\'' '
++ for _mlv in ${MODULES_RUN_QUARANTINE:-}
++ '[' LD_PRELOAD = LD_PRELOAD -a LD_PRELOAD = LD_PRELOAD ']'
+++ eval 'echo ${LD_PRELOAD+x}'
++++ echo
++ '[' -n '' ']'
++ _mlrv=MODULES_RUNENV_LD_PRELOAD
+++ eval 'echo ${MODULES_RUNENV_LD_PRELOAD:-}'
++++ echo
++ _mlre='LD_LIBRARY_PATH='\'''\'' LD_PRELOAD='\'''\'' '
++ '[' -n 'LD_LIBRARY_PATH='\'''\'' LD_PRELOAD='\'''\'' ' ']'
+++ eval 'LD_LIBRARY_PATH='\'''\''' 'LD_PRELOAD='\'''\''' /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'
++++ LD_LIBRARY_PATH=
++++ LD_PRELOAD=
++++ /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash load rhel8/default-icl
+Loading rhel8/default-icl
+  Loading requirement: rhel8/slurm singularity/current rhel8/global cuda/11.4
+    vgl/2.5.1/64 intel-oneapi-compilers/2022.1.0/gcc/b6zld2mz ucx/1.15.0
+    intel-oneapi-mpi/2021.6.0/intel/guxuvcpm
++ eval 'SOCKS_PROXY_PORT=1081;' export 'SOCKS_PROXY_PORT;
+CPATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//include:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/include:/usr/local/software/cuda/11.4/include;' export 'CPATH;
+SLURM_MPI_TYPE=pmi2;' export 'SLURM_MPI_TYPE;
+CMPLR_ROOT=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0;' export 'CMPLR_ROOT;
+CMAKE_PREFIX_PATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/.:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/IntelDPCPP:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/;' export 'CMAKE_PREFIX_PATH;
+I_MPI_F90=ifort;' export 'I_MPI_F90;
+I_MPI_OFI_PROVIDER=mlx;' export 'I_MPI_OFI_PROVIDER;
+FPGA_VARS_ARGS=;' export 'FPGA_VARS_ARGS;
+COSMOHOST=darwin;' export 'COSMOHOST;
+CMAKE_PREFIX_PATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/:1:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/.:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/IntelDPCPP:1;' export 'CMAKE_PREFIX_PATH_modshare;
+CLASSPATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/mpi.jar:1;' export 'CLASSPATH_modshare;
+FPGA_VARS_DIR=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga;' export 'FPGA_VARS_DIR;
+I_MPI_CXX=icpc;' export 'I_MPI_CXX;
+MANPATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/man:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/documentation/en/man/common:/usr/local/software/global-rhel8/man:/usr/local/software/slurm/current-rhel8/share/man:/usr/share/man:;' export 'MANPATH;
+SOCKS_PROXY_SERVER=10.143.100.11;' export 'SOCKS_PROXY_SERVER;
+MANPATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/documentation/en/man/common:1:/usr/local/software/global-rhel8/man:1::1:/usr/local/software/slurm/current-rhel8/share/man:1:/usr/share/man:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/man:1;' export 'MANPATH_modshare;
+PKG_CONFIG_PATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/lib/pkgconfig:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib/pkgconfig:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/lib/pkgconfig;' export 'PKG_CONFIG_PATH;
+MODULES_LMNOTUASKED_modshare=cuda/11.4:1:intel-oneapi-compilers/2022.1.0/gcc/b6zld2mz:1:rhel8/slurm:1:singularity/current:1:vgl/2.5.1/64:1:ucx/1.15.0:1:intel-oneapi-mpi/2021.6.0/intel/guxuvcpm:1:rhel8/global:1;' export 'MODULES_LMNOTUASKED_modshare;
+MODULES_LMPREREQ_modshare=rhel8/default-icl\&rhel8/slurm\&singularity\&rhel8/global\&cuda/11.4\&vgl/2.5.1/64\&intel-oneapi-compilers/2022.1.0/gcc\&intel-oneapi-mpi/2021.6.0/intel:1:intel-oneapi-mpi/2021.6.0/intel/guxuvcpm\&ucx/1.15.0:1;' export 'MODULES_LMPREREQ_modshare;
+LD_LIBRARY_PATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:1:/usr/local/software/cuda/11.4/lib:1:/usr/local/software/cuda/11.4/nvvm/lib64:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:1:/usr/local/software/slurm/current-rhel8/lib:1:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:1:/usr/local/software/global-rhel8/lib:1:/usr/local/software/cuda/11.4/lib64:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:1:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:1;' export 'LD_LIBRARY_PATH_modshare;
+MODULEPATH=/usr/local/software/spack/csd3/spack-modules/ucx-2024-08-19:/usr/local/software/spack/spack-modules/icelake-20220710/linux-rocky8-icelake:/usr/local/software/spack/spack-modules/icelake-20211027/linux-centos8-icelake:/usr/local/software/spack/spack-modules/icelake-20210927/linux-centos8-icelake:/usr/local/software/spack/spack-modules/icelake-20210927/linux-centos8-x86_64:/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles:/usr/local/software/spack/current/share/spack/tcl/linux-rhel7-x86_64:/usr/local/software/modulefiles:/usr/local/Cluster-Config/modulefiles;' export 'MODULEPATH;
+PATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/bin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//bin:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/bin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/bin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/bin/intel64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/bin:/usr/local/Cluster-Apps/vgl/2.5.1/64/bin:/usr/local/software/cuda/11.4/bin:/usr/local/software/cuda/11.4/samples/bin/x86_64/linux/release:/usr/local/software/cuda/11.4/nvvm/bin:/usr/local/software/cuda/11.4/libnvvp:/usr/local/software/global-rhel8/bin:/opt/singularity/bin:/usr/local/Cluster-Apps/singularity/images:/usr/local/software/slurm/current-rhel8/sbin:/usr/local/software/slurm/current-rhel8/bin:/home/yi260/.vscode-server/cli/servers/Stable-4437686ffebaf200fa4a6e6e67f735f3edf24ada/server/bin/remote-cli:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/libfabric/bin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/yi260/bin:/home/yi260/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand;' export 'PATH;
+OMP_NUM_THREADS=1;' export 'OMP_NUM_THREADS;
+INTELFPGAOCLSDKROOT=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga;' export 'INTELFPGAOCLSDKROOT;
+FI_PROVIDER_PATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib/prov:1:/usr/lib64/libfabric:1;' export 'FI_PROVIDER_PATH_modshare;
+MODULES_LMPREREQ=intel-oneapi-mpi/2021.6.0/intel/guxuvcpm\&ucx/1.15.0:rhel8/default-icl\&rhel8/slurm\&singularity\&rhel8/global\&cuda/11.4\&vgl/2.5.1/64\&intel-oneapi-compilers/2022.1.0/gcc\&intel-oneapi-mpi/2021.6.0/intel;' export 'MODULES_LMPREREQ;
+LD_LIBRARY_PATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib;' export 'LD_LIBRARY_PATH;
+LOADEDMODULES=rhel8/slurm:singularity/current:rhel8/global:cuda/11.4:vgl/2.5.1/64:intel-oneapi-compilers/2022.1.0/gcc/b6zld2mz:ucx/1.15.0:intel-oneapi-mpi/2021.6.0/intel/guxuvcpm:rhel8/default-icl;' export 'LOADEDMODULES;
+I_MPI_CC=icc;' export 'I_MPI_CC;
+FPATH=/usr/local/software/cuda/11.4/include;' export 'FPATH;
+PKG_CONFIG_PATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/lib/pkgconfig:1:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib/pkgconfig:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/lib/pkgconfig:1;' export 'PKG_CONFIG_PATH_modshare;
+MODULES_LMNOTUASKED=rhel8/slurm:singularity/current:rhel8/global:cuda/11.4:vgl/2.5.1/64:intel-oneapi-compilers/2022.1.0/gcc/b6zld2mz:ucx/1.15.0:intel-oneapi-mpi/2021.6.0/intel/guxuvcpm;' export 'MODULES_LMNOTUASKED;
+VGL_BINDIR=/usr/local/Cluster-Apps/vgl/2.5.1/64/bin;' export 'VGL_BINDIR;
+NLSPATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin/locale/%l_%t/%N;' export 'NLSPATH;
+OCL_ICD_FILENAMES_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64/libintelocl.so:1:libintelocl_emu.so:1:libalteracl.so:1;' export 'OCL_ICD_FILENAMES_modshare;
+LOADEDMODULES_modshare=rhel8/default-icl:1:cuda/11.4:1:intel-oneapi-compilers/2022.1.0/gcc/b6zld2mz:1:rhel8/slurm:1:singularity/current:1:vgl/2.5.1/64:1:ucx/1.15.0:1:rhel8/global:1:intel-oneapi-mpi/2021.6.0/intel/guxuvcpm:1;' export 'LOADEDMODULES_modshare;
+VGL_COMPRESS=proxy;' export 'VGL_COMPRESS;
+MODULEPATH_modshare=/usr/local/software/spack/spack-modules/icelake-20210927/linux-centos8-icelake:1:/usr/local/software/spack/spack-modules/icelake-20211027/linux-centos8-icelake:1:/usr/share/Modules/modulefiles:2:/usr/local/software/spack/spack-modules/icelake-20220710/linux-rocky8-icelake:1:/usr/local/software/modulefiles:1:/usr/local/software/spack/csd3/spack-modules/ucx-2024-08-19:1:/usr/local/software/spack/spack-modules/icelake-20210927/linux-centos8-x86_64:1:/usr/share/modulefiles:2:/etc/modulefiles:2:/etc/scl/modulefiles:1:/usr/local/Cluster-Config/modulefiles:1:/usr/local/software/spack/current/share/spack/tcl/linux-rhel7-x86_64:1;' export 'MODULEPATH_modshare;
+I_MPI_PMI_LIBRARY=/usr/local/software/slurm/current-rhel8/lib/libpmi2.so;' export 'I_MPI_PMI_LIBRARY;
+UCX_NET_DEVICES=mlx5_0:1;' export 'UCX_NET_DEVICES;
+OCL_ICD_FILENAMES=libintelocl_emu.so:libalteracl.so:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64/libintelocl.so;' export 'OCL_ICD_FILENAMES;
+I_MPI_ROOT=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0;' export 'I_MPI_ROOT;
+LIBRARY_PATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64;' export 'LIBRARY_PATH;
+DIAGUTIL_PATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/sys_check/sys_check.sh:1;' export 'DIAGUTIL_PATH_modshare;
+_LMFILES_=/usr/local/Cluster-Config/modulefiles/rhel8/slurm:/usr/local/Cluster-Config/modulefiles/singularity/current:/usr/local/Cluster-Config/modulefiles/rhel8/global:/usr/local/Cluster-Config/modulefiles/cuda/11.4:/usr/local/Cluster-Config/modulefiles/vgl/2.5.1/64:/usr/local/software/spack/spack-modules/icelake-20220710/linux-rocky8-icelake/intel-oneapi-compilers/2022.1.0/gcc/b6zld2mz:/usr/local/software/spack/csd3/spack-modules/ucx-2024-08-19/ucx/1.15.0:/usr/local/software/spack/spack-modules/icelake-20220710/linux-rocky8-icelake/intel-oneapi-mpi/2021.6.0/intel/guxuvcpm:/usr/local/Cluster-Config/modulefiles/rhel8/default-icl;' export '_LMFILES_;
+ACL_BOARD_VENDOR_PATH_modshare=/opt/Intel/OpenCLFPGA/oneAPI/Boards:1;' export 'ACL_BOARD_VENDOR_PATH_modshare;
+LIBRARY_PATH_modshare=/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:1:/usr/local/software/cuda/11.4/lib64:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:1:/usr/local/software/cuda/11.4/lib:1:/usr/local/software/cuda/11.4/nvvm/lib64:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:1;' export 'LIBRARY_PATH_modshare;
+NLSPATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin/locale/%l_%t/%N:1;' export 'NLSPATH_modshare;
+FPATH_modshare=/usr/local/software/cuda/11.4/include:1;' export 'FPATH_modshare;
+CUDA_INSTALL_PATH=/usr/local/software/cuda/11.4;' export 'CUDA_INSTALL_PATH;
+SLURM_CONF=/usr/local/software/slurm/current-rhel8/etc/slurm.conf;' export 'SLURM_CONF;
+ACL_BOARD_VENDOR_PATH=/opt/Intel/OpenCLFPGA/oneAPI/Boards;' export 'ACL_BOARD_VENDOR_PATH;
+I_MPI_F77=ifort;' export 'I_MPI_F77;
+PYTHONDONTWRITEBYTECODE=1;' export 'PYTHONDONTWRITEBYTECODE;
+CUDA_PATH=/usr/local/software/cuda/11.4;' export 'CUDA_PATH;
+CPATH_modshare=/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/include:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//include:1:/usr/local/software/cuda/11.4/include:1;' export 'CPATH_modshare;
+CLASSPATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/mpi.jar;' export 'CLASSPATH;
+_LMFILES__modshare=/usr/local/Cluster-Config/modulefiles/rhel8/global:1:/usr/local/Cluster-Config/modulefiles/rhel8/default-icl:1:/usr/local/Cluster-Config/modulefiles/cuda/11.4:1:/usr/local/software/spack/csd3/spack-modules/ucx-2024-08-19/ucx/1.15.0:1:/usr/local/software/spack/spack-modules/icelake-20220710/linux-rocky8-icelake/intel-oneapi-mpi/2021.6.0/intel/guxuvcpm:1:/usr/local/Cluster-Config/modulefiles/rhel8/slurm:1:/usr/local/Cluster-Config/modulefiles/singularity/current:1:/usr/local/Cluster-Config/modulefiles/vgl/2.5.1/64:1:/usr/local/software/spack/spack-modules/icelake-20220710/linux-rocky8-icelake/intel-oneapi-compilers/2022.1.0/gcc/b6zld2mz:1;' export '_LMFILES__modshare;
+FI_PROVIDER_PATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib/prov:/usr/lib64/libfabric;' export 'FI_PROVIDER_PATH;
+SOCKS_PROXY_NETWORK=131.111.0.0/16;' export 'SOCKS_PROXY_NETWORK;
+I_MPI_FC=ifort;' export 'I_MPI_FC;
+PATH_modshare=/home/yi260/bin:1:/usr/bin:1:/usr/local/Cluster-Apps/vgl/2.5.1/64/bin:1:/usr/local/bin:1:/usr/share/Modules/bin:1:/usr/local/software/slurm/current-rhel8/sbin:1:/usr/local/Cluster-Apps/singularity/images:1:/usr/local/software/cuda/11.4/bin:1:/opt/singularity/bin:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/bin:1:/usr/local/software/cuda/11.4/samples/bin/x86_64/linux/release:1:/home/yi260/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//bin:1:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/bin:1:/usr/local/software/slurm/current-rhel8/bin:1:/usr/local/software/cuda/11.4/nvvm/bin:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/bin/intel64:1:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/bin:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/bin:1:/usr/local/software/cuda/11.4/libnvvp:1:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:1:/usr/sbin:1:/usr/local/software/global-rhel8/bin:1:/home/yi260/.vscode-server/cli/servers/Stable-4437686ffebaf200fa4a6e6e67f735f3edf24ada/server/bin/remote-cli:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/libfabric/bin:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/bin:1:/usr/local/sbin:1;' export 'PATH_modshare;
+DIAGUTIL_PATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/sys_check/sys_check.sh;' export 'DIAGUTIL_PATH;
+test' '0;'
+++ SOCKS_PROXY_PORT=1081
+++ export SOCKS_PROXY_PORT
+++ CPATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//include:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/include:/usr/local/software/cuda/11.4/include
+++ export CPATH
+++ SLURM_MPI_TYPE=pmi2
+++ export SLURM_MPI_TYPE
+++ CMPLR_ROOT=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0
+++ export CMPLR_ROOT
+++ CMAKE_PREFIX_PATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/.:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/IntelDPCPP:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/
+++ export CMAKE_PREFIX_PATH
+++ I_MPI_F90=ifort
+++ export I_MPI_F90
+++ I_MPI_OFI_PROVIDER=mlx
+++ export I_MPI_OFI_PROVIDER
+++ FPGA_VARS_ARGS=
+++ export FPGA_VARS_ARGS
+++ COSMOHOST=darwin
+++ export COSMOHOST
+++ CMAKE_PREFIX_PATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/:1:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/.:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/IntelDPCPP:1
+++ export CMAKE_PREFIX_PATH_modshare
+++ CLASSPATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/mpi.jar:1
+++ export CLASSPATH_modshare
+++ FPGA_VARS_DIR=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga
+++ export FPGA_VARS_DIR
+++ I_MPI_CXX=icpc
+++ export I_MPI_CXX
+++ MANPATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/man:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/documentation/en/man/common:/usr/local/software/global-rhel8/man:/usr/local/software/slurm/current-rhel8/share/man:/usr/share/man:
+++ export MANPATH
+++ SOCKS_PROXY_SERVER=10.143.100.11
+++ export SOCKS_PROXY_SERVER
+++ MANPATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/documentation/en/man/common:1:/usr/local/software/global-rhel8/man:1::1:/usr/local/software/slurm/current-rhel8/share/man:1:/usr/share/man:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/man:1
+++ export MANPATH_modshare
+++ PKG_CONFIG_PATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/lib/pkgconfig:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib/pkgconfig:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/lib/pkgconfig
+++ export PKG_CONFIG_PATH
+++ MODULES_LMNOTUASKED_modshare=cuda/11.4:1:intel-oneapi-compilers/2022.1.0/gcc/b6zld2mz:1:rhel8/slurm:1:singularity/current:1:vgl/2.5.1/64:1:ucx/1.15.0:1:intel-oneapi-mpi/2021.6.0/intel/guxuvcpm:1:rhel8/global:1
+++ export MODULES_LMNOTUASKED_modshare
+++ MODULES_LMPREREQ_modshare='rhel8/default-icl&rhel8/slurm&singularity&rhel8/global&cuda/11.4&vgl/2.5.1/64&intel-oneapi-compilers/2022.1.0/gcc&intel-oneapi-mpi/2021.6.0/intel:1:intel-oneapi-mpi/2021.6.0/intel/guxuvcpm&ucx/1.15.0:1'
+++ export MODULES_LMPREREQ_modshare
+++ LD_LIBRARY_PATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:1:/usr/local/software/cuda/11.4/lib:1:/usr/local/software/cuda/11.4/nvvm/lib64:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:1:/usr/local/software/slurm/current-rhel8/lib:1:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:1:/usr/local/software/global-rhel8/lib:1:/usr/local/software/cuda/11.4/lib64:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:1:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:1
+++ export LD_LIBRARY_PATH_modshare
+++ MODULEPATH=/usr/local/software/spack/csd3/spack-modules/ucx-2024-08-19:/usr/local/software/spack/spack-modules/icelake-20220710/linux-rocky8-icelake:/usr/local/software/spack/spack-modules/icelake-20211027/linux-centos8-icelake:/usr/local/software/spack/spack-modules/icelake-20210927/linux-centos8-icelake:/usr/local/software/spack/spack-modules/icelake-20210927/linux-centos8-x86_64:/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles:/usr/local/software/spack/current/share/spack/tcl/linux-rhel7-x86_64:/usr/local/software/modulefiles:/usr/local/Cluster-Config/modulefiles
+++ export MODULEPATH
+++ PATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/bin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//bin:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/bin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/bin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/bin/intel64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/bin:/usr/local/Cluster-Apps/vgl/2.5.1/64/bin:/usr/local/software/cuda/11.4/bin:/usr/local/software/cuda/11.4/samples/bin/x86_64/linux/release:/usr/local/software/cuda/11.4/nvvm/bin:/usr/local/software/cuda/11.4/libnvvp:/usr/local/software/global-rhel8/bin:/opt/singularity/bin:/usr/local/Cluster-Apps/singularity/images:/usr/local/software/slurm/current-rhel8/sbin:/usr/local/software/slurm/current-rhel8/bin:/home/yi260/.vscode-server/cli/servers/Stable-4437686ffebaf200fa4a6e6e67f735f3edf24ada/server/bin/remote-cli:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/libfabric/bin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/yi260/bin:/home/yi260/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand
+++ export PATH
+++ OMP_NUM_THREADS=1
+++ export OMP_NUM_THREADS
+++ INTELFPGAOCLSDKROOT=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga
+++ export INTELFPGAOCLSDKROOT
+++ FI_PROVIDER_PATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib/prov:1:/usr/lib64/libfabric:1
+++ export FI_PROVIDER_PATH_modshare
+++ MODULES_LMPREREQ='intel-oneapi-mpi/2021.6.0/intel/guxuvcpm&ucx/1.15.0:rhel8/default-icl&rhel8/slurm&singularity&rhel8/global&cuda/11.4&vgl/2.5.1/64&intel-oneapi-compilers/2022.1.0/gcc&intel-oneapi-mpi/2021.6.0/intel'
+++ export MODULES_LMPREREQ
+++ LD_LIBRARY_PATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/host/linux64/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/Cluster-Apps/vgl/2.5.1/64/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64:/usr/local/software/global-rhel8/lib:/usr/local/software/slurm/current-rhel8/lib
+++ export LD_LIBRARY_PATH
+++ LOADEDMODULES=rhel8/slurm:singularity/current:rhel8/global:cuda/11.4:vgl/2.5.1/64:intel-oneapi-compilers/2022.1.0/gcc/b6zld2mz:ucx/1.15.0:intel-oneapi-mpi/2021.6.0/intel/guxuvcpm:rhel8/default-icl
+++ export LOADEDMODULES
+++ I_MPI_CC=icc
+++ export I_MPI_CC
+++ FPATH=/usr/local/software/cuda/11.4/include
+++ export FPATH
+++ PKG_CONFIG_PATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/lib/pkgconfig:1:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib/pkgconfig:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/lib/pkgconfig:1
+++ export PKG_CONFIG_PATH_modshare
+++ MODULES_LMNOTUASKED=rhel8/slurm:singularity/current:rhel8/global:cuda/11.4:vgl/2.5.1/64:intel-oneapi-compilers/2022.1.0/gcc/b6zld2mz:ucx/1.15.0:intel-oneapi-mpi/2021.6.0/intel/guxuvcpm
+++ export MODULES_LMNOTUASKED
+++ VGL_BINDIR=/usr/local/Cluster-Apps/vgl/2.5.1/64/bin
+++ export VGL_BINDIR
+++ NLSPATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin/locale/%l_%t/%N
+++ export NLSPATH
+++ OCL_ICD_FILENAMES_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64/libintelocl.so:1:libintelocl_emu.so:1:libalteracl.so:1
+++ export OCL_ICD_FILENAMES_modshare
+++ LOADEDMODULES_modshare=rhel8/default-icl:1:cuda/11.4:1:intel-oneapi-compilers/2022.1.0/gcc/b6zld2mz:1:rhel8/slurm:1:singularity/current:1:vgl/2.5.1/64:1:ucx/1.15.0:1:rhel8/global:1:intel-oneapi-mpi/2021.6.0/intel/guxuvcpm:1
+++ export LOADEDMODULES_modshare
+++ VGL_COMPRESS=proxy
+++ export VGL_COMPRESS
+++ MODULEPATH_modshare=/usr/local/software/spack/spack-modules/icelake-20210927/linux-centos8-icelake:1:/usr/local/software/spack/spack-modules/icelake-20211027/linux-centos8-icelake:1:/usr/share/Modules/modulefiles:2:/usr/local/software/spack/spack-modules/icelake-20220710/linux-rocky8-icelake:1:/usr/local/software/modulefiles:1:/usr/local/software/spack/csd3/spack-modules/ucx-2024-08-19:1:/usr/local/software/spack/spack-modules/icelake-20210927/linux-centos8-x86_64:1:/usr/share/modulefiles:2:/etc/modulefiles:2:/etc/scl/modulefiles:1:/usr/local/Cluster-Config/modulefiles:1:/usr/local/software/spack/current/share/spack/tcl/linux-rhel7-x86_64:1
+++ export MODULEPATH_modshare
+++ I_MPI_PMI_LIBRARY=/usr/local/software/slurm/current-rhel8/lib/libpmi2.so
+++ export I_MPI_PMI_LIBRARY
+++ UCX_NET_DEVICES=mlx5_0:1
+++ export UCX_NET_DEVICES
+++ OCL_ICD_FILENAMES=libintelocl_emu.so:libalteracl.so:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/x64/libintelocl.so
+++ export OCL_ICD_FILENAMES
+++ I_MPI_ROOT=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0
+++ export I_MPI_ROOT
+++ LIBRARY_PATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:/usr/local/software/cuda/11.4/lib64:/usr/local/software/cuda/11.4/lib:/usr/local/software/cuda/11.4/nvvm/lib64
+++ export LIBRARY_PATH
+++ DIAGUTIL_PATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/sys_check/sys_check.sh:1
+++ export DIAGUTIL_PATH_modshare
+++ _LMFILES_=/usr/local/Cluster-Config/modulefiles/rhel8/slurm:/usr/local/Cluster-Config/modulefiles/singularity/current:/usr/local/Cluster-Config/modulefiles/rhel8/global:/usr/local/Cluster-Config/modulefiles/cuda/11.4:/usr/local/Cluster-Config/modulefiles/vgl/2.5.1/64:/usr/local/software/spack/spack-modules/icelake-20220710/linux-rocky8-icelake/intel-oneapi-compilers/2022.1.0/gcc/b6zld2mz:/usr/local/software/spack/csd3/spack-modules/ucx-2024-08-19/ucx/1.15.0:/usr/local/software/spack/spack-modules/icelake-20220710/linux-rocky8-icelake/intel-oneapi-mpi/2021.6.0/intel/guxuvcpm:/usr/local/Cluster-Config/modulefiles/rhel8/default-icl
+++ export _LMFILES_
+++ ACL_BOARD_VENDOR_PATH_modshare=/opt/Intel/OpenCLFPGA/oneAPI/Boards:1
+++ export ACL_BOARD_VENDOR_PATH_modshare
+++ LIBRARY_PATH_modshare=/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/lib:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/lib:1:/usr/local/software/cuda/11.4/lib64:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/release:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib:1:/usr/local/software/cuda/11.4/lib:1:/usr/local/software/cuda/11.4/nvvm/lib64:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib:1
+++ export LIBRARY_PATH_modshare
+++ NLSPATH_modshare=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/compiler/lib/intel64_lin/locale/%l_%t/%N:1
+++ export NLSPATH_modshare
+++ FPATH_modshare=/usr/local/software/cuda/11.4/include:1
+++ export FPATH_modshare
+++ CUDA_INSTALL_PATH=/usr/local/software/cuda/11.4
+++ export CUDA_INSTALL_PATH
+++ SLURM_CONF=/usr/local/software/slurm/current-rhel8/etc/slurm.conf
+++ export SLURM_CONF
+++ ACL_BOARD_VENDOR_PATH=/opt/Intel/OpenCLFPGA/oneAPI/Boards
+++ export ACL_BOARD_VENDOR_PATH
+++ I_MPI_F77=ifort
+++ export I_MPI_F77
+++ PYTHONDONTWRITEBYTECODE=1
+++ export PYTHONDONTWRITEBYTECODE
+++ CUDA_PATH=/usr/local/software/cuda/11.4
+++ export CUDA_PATH
+++ CPATH_modshare=/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/include:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//include:1:/usr/local/software/cuda/11.4/include:1
+++ export CPATH_modshare
+++ CLASSPATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//lib/mpi.jar
+++ export CLASSPATH
+++ _LMFILES__modshare=/usr/local/Cluster-Config/modulefiles/rhel8/global:1:/usr/local/Cluster-Config/modulefiles/rhel8/default-icl:1:/usr/local/Cluster-Config/modulefiles/cuda/11.4:1:/usr/local/software/spack/csd3/spack-modules/ucx-2024-08-19/ucx/1.15.0:1:/usr/local/software/spack/spack-modules/icelake-20220710/linux-rocky8-icelake/intel-oneapi-mpi/2021.6.0/intel/guxuvcpm:1:/usr/local/Cluster-Config/modulefiles/rhel8/slurm:1:/usr/local/Cluster-Config/modulefiles/singularity/current:1:/usr/local/Cluster-Config/modulefiles/vgl/2.5.1/64:1:/usr/local/software/spack/spack-modules/icelake-20220710/linux-rocky8-icelake/intel-oneapi-compilers/2022.1.0/gcc/b6zld2mz:1
+++ export _LMFILES__modshare
+++ FI_PROVIDER_PATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/lib/prov:/usr/lib64/libfabric
+++ export FI_PROVIDER_PATH
+++ SOCKS_PROXY_NETWORK=131.111.0.0/16
+++ export SOCKS_PROXY_NETWORK
+++ I_MPI_FC=ifort
+++ export I_MPI_FC
+++ PATH_modshare=/home/yi260/bin:1:/usr/bin:1:/usr/local/Cluster-Apps/vgl/2.5.1/64/bin:1:/usr/local/bin:1:/usr/share/Modules/bin:1:/usr/local/software/slurm/current-rhel8/sbin:1:/usr/local/Cluster-Apps/singularity/images:1:/usr/local/software/cuda/11.4/bin:1:/opt/singularity/bin:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/bin:1:/usr/local/software/cuda/11.4/samples/bin/x86_64/linux/release:1:/home/yi260/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//bin:1:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/bin:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/bin:1:/usr/local/software/slurm/current-rhel8/bin:1:/usr/local/software/cuda/11.4/nvvm/bin:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/bin/intel64:1:/usr/local/software/spack/csd3/spack-views/ucx-2024-08-19/ucx-1.15.0/gcc-8.5.0/3odtpik4wnhzdj6fgnc5ujwcmmnx4yjl/bin:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0//libfabric/bin:1:/usr/local/software/cuda/11.4/libnvvp:1:/usr/local/software/archive/linux-scientific7-x86_64/gcc-9/miniconda3-4.7.12.1-rmuek6r3f6p3v6fdj7o2klyzta3qhslh/condabin:1:/usr/sbin:1:/usr/local/software/global-rhel8/bin:1:/home/yi260/.vscode-server/cli/servers/Stable-4437686ffebaf200fa4a6e6e67f735f3edf24ada/server/bin/remote-cli:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-mpi-2021.6.0/intel-2021.6.0/guxuvcpmykplbrr2e3af2yd7njqhau5e/mpi/2021.6.0/libfabric/bin:1:/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/linux/lib/oclfpga/bin:1:/usr/local/sbin:1
+++ export PATH_modshare
+++ DIAGUTIL_PATH=/usr/local/software/spack/spack-views/rocky8-icelake-20220710/intel-oneapi-compilers-2022.1.0/gcc-11.3.0/b6zld2mz7cid27yloxznoidymd7vywwz/compiler/2022.1.0/sys_check/sys_check.sh
+++ export DIAGUTIL_PATH
+++ test 0
++ _mlstatus=0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlre _mlv _mlrv _mlIFS
++ '[' -n '' ']'
++ unset _mlshdbg
++ return 0
++ export I_MPI_PIN_DOMAIN=omp:compact
++ I_MPI_PIN_DOMAIN=omp:compact
++ export I_MPI_PIN_ORDER=scatter
++ I_MPI_PIN_ORDER=scatter
++ rm -rf build
++ mkdir -p build
+mkdir: cannot create directory ‘build’: Permission denied
